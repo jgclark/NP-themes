@@ -388,15 +388,10 @@
           "isHiddenWithoutCursor": true,
           "isRevealOnCursorRange": true
         },
-        "timeblock_start": {
-            "__regex": "(?<!@done\\(\\d{4}-[01]\\d{1}-\\d{2})(^|\\s|T)(?:(?:at|from)\\s*)?(?:(?:[0-2]?\\d{1}|noon|midnight)(:[0-5]\\d)?|(?:[0-2]?\\d{1}|noon|midnight))(A\\.M\\.|P\\.M\\.|AM?|PM?|am?|pm?)?(?=\\W|$)",
-            "matchPosition": 0,
-            "color": "#CC4999"
-        },
-        "timeblock_end": {
-            "__regex": "(?<!\\d{4}(-[01]\\d)?)\\s*(?:\\-|\\–|\\~|\\〜|to|\\?)\\s*(?:[0-2]?\\d{1})(?::[0-5]\\d)?(A\\.M\\.|P\\.M\\.|AM?|PM?|am?|pm?)?(?=\\W|$)",
-            "matchPosition": 0,
-            "color": "#CC6999"
+        "timeblocks": {
+          "regex": "(?<!@done\\(\\d{4}-[01]\\d{1}-\\d{2})(^|\\s|T)((at|from)\\s*)?(([0-2]?\\d{1}|noon|midnight)(:[0-5]\\d)?|(?:[0-2]?\\d{1}|noon|midnight))(A\\.M\\.|P\\.M\\.|AM?|PM?|am?|pm?)?(\\s*(\\-|\\–|\\~|\\〜|to|\\?)\\s*([0-2]?\\d)(:[0-5]\\d)?(A\\.M\\.|P\\.M\\.|AM?|PM?|am?|pm?)?|$)",
+          "matchPosition": 0,
+          "color": "#CC4999"
         }
     }
 }
