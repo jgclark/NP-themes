@@ -196,6 +196,45 @@
     "attag": {},
     "phonenumber": {},
 
+		"NoteLinks-main": {
+			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"matchPosition": 2,
+			"color": "#C5487A"
+		},
+		"NoteLinks-main-done": {
+			"regex": "\\h(x\\[\\[)(.*?)(\\]\\])",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true,
+			"font": "noteplanstate",
+			"color": "#97B853"
+		},
+		"NoteLinks-main-cancelled": {
+			"regex": "\\h(-\\[\\[)(.*?)(\\]\\])",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true,
+			"font": "noteplanstate",
+			"color": "#C5487A"
+		},
+
+		"NoteLinks-left-brackets": {
+			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"matchPosition": 1,
+			"color": " #C5487A",
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true
+		},
+		"NoteLinks-right-brackets": {
+			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"matchPosition": 3,
+			"color": " #C5487A",
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true
+		},
+
     "attribute": {
       "regex": "\\v([\\w\\h]{3,})(::)",
       "color": "#8B82C9",
