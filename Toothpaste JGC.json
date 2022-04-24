@@ -317,15 +317,52 @@
       "size": 15
     },
     "code-fence": {
-      "theme": "github"
+      "theme": "github",
+      "body": {
+        "font": "Menlo-Regular",
+        "backgroundColor": "#d5e4e2"
+      },
+      "corner-radius": 8,
+      "fence-open": {
+        "color": "#6584A2"
+      },
+      "fence-close": {
+        "color": "#6584A2"
+      },
+      "language-specifier": {
+        "font": "Menlo-Italic",
+        "color": "#afafaf"
+      }
+    },
+    "#waiting": {
+      "regex": "^(.*#waiting.*)$",
+      "matchPosition": 1,
+      "textColor": "#DAE3E888",
+      "font": "AvenirNext-Italic"
+    },
+    "Templates_tags-opener": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 1,
+      "color": "#6584A2",
+      "font": "Menlo-Regular"
     },
     "Templates_tags": {
-      "regex": "(?>\\{\\{)[^)]{1,}((?>\\(\\)\\}\\})|(?>\\)\\}\\}))",
-      "matchPosition": 0,
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 2,
       "color": "#96CBFE",
-      "font": "Menlo-Regular",
-      "isHiddenWithoutCursor": false,
-      "isRevealOnCursorRange": true
+      "font": "Menlo-Regular"
+    },
+    "Templates_tags-closer": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 3,
+      "color": "#6584A2",
+      "font": "Menlo-Regular"
+    },
+    "Templates_tags-commented-out": {
+      "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
+      "matchPosition": 1,
+      "color": "#6584A2",
+      "font": "AvenirNext-Italic"
     },
     "eventID": {
       "regex": "(event:[A-F0-9-]{36,37})",
