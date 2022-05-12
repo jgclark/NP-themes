@@ -8,13 +8,13 @@
     "backgroundColor": "#1D1E1F",
     "altBackgroundColor": "#2E2F30",
     "toolbarBackgroundColor": "#2E2F30",
-    "tintColor": "#E9C062",
+    "tintColor": "#E9C0A2",
     "tintColor2": "#73B3C0",
     "textColor": "#DAE3E8",
     "toolbarIconColor": "#c5c5c0",
     "menuItemColor": "#c5c5c0",
     "timeBlockColor": "#E9C062",
-    "shouldOverwriteFont": true
+    "shouldOverwriteFont": false
   },
 
   "orderedStyles": [
@@ -64,9 +64,16 @@
       "paragraphSpacingBefore": 0
     },
     "title1": {
-      "color": "#DAE3E8",
+      "color": "#CC6666",
       "size": 28,
       "font": "AvenirNext-Bold"
+    },
+    "title-in-frontmatter": {
+        "regex": "^[tT]itle:\\s+(.*)",
+        "matchPosition": 1,
+        "color": "#CC6666",
+        "size": 24,
+        "font": "AvenirNext-Bold"
     },
     "title2": {
       "color": "#E9C062",

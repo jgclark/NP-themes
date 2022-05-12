@@ -8,7 +8,7 @@
     "editor": {
         "backgroundColor": "#FAFAFA",
         "altBackgroundColor": "#F9F9F9",
-        "tintColor": "#D8A250",
+        "tintColor": "#C87230",
         "tintColor2": "#769EB3",
         "textColor": "#222E33",
         "toolbarBackgroundColor": "#EBEBE4",
@@ -68,6 +68,13 @@
         "title1": {
             "color": "#C5487A",
             "size": 28,
+            "font": "AvenirNext-Bold"
+        },
+        "title-in-frontmatter": {
+            "regex": "^[tT]itle:\\s+(.*)",
+            "matchPosition": 1,
+            "color": "#C5487A",
+            "size": 24,
             "font": "AvenirNext-Bold"
         },
         "title2": {
@@ -184,7 +191,7 @@
         },
         
         "markdown-link": {
-            "color": "#E8A250"
+            "color": "#C89240"
         },
         
         "markdown-link-url": {
@@ -192,7 +199,7 @@
         },
         
         "link": {
-            "color": "#C88E4B"
+            "color": "#C88E6B"
         },
         
         "time": {
