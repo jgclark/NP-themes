@@ -14,7 +14,7 @@
     "toolbarIconColor": "#c5c5c0",
     "menuItemColor": "#c5c5c0",
     "timeBlockColor": "#E9C062",
-    "shouldOverwriteFont": false
+    "shouldOverwriteFont": true
   },
 
   "orderedStyles": [
@@ -63,6 +63,7 @@
       "paragraphSpacing": 6,
       "paragraphSpacingBefore": 0
     },
+
     "title1": {
       "color": "#CC6666",
       "size": 28,
@@ -116,6 +117,7 @@
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 3
     },
+
     "bold": {
       "color": "#CC6666",
       "font": "AvenirNext-Bold"
@@ -145,6 +147,7 @@
     "boldItalic-right-mark": {
       "color": "#66CC6666"
     },
+
     "todo": {
       "font": "noteplanstate",
       "color": "#CC6666",
@@ -199,9 +202,15 @@
     "done-date": {},
     "schedule-from-date-link": {},
     "note-title-link": {},
-    "hashtag": {},
-    "attag": {},
-    "phonenumber": {},
+    "hashtag": {
+      "type": ""
+    },
+    "attag": {
+      "type": ""
+    },
+    "phonenumber": {
+      "color": "#769EB3"
+    },
 
 		"NoteLinks-main": {
 			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
