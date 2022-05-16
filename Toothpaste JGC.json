@@ -17,7 +17,7 @@
     "shouldOverwriteFont": true
   },
 
-  "orderedStyles": [
+  "__orderedStyles": [
       "title-mark1",
       "title-mark2",
       "title-mark3",
@@ -163,8 +163,7 @@
       "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
       "color": "#9DC777",
       "matchPosition": 2,
-      "headIndent": 33,
-      "strikethroughStyle": 1
+      "headIndent": 33
     },
     "checked-canceled": {
       "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
@@ -199,13 +198,18 @@
     },
     "link": {},
     "schedule-to-date-link": {},
-    "done-date": {},
+    "done-date": {
+      "color": "#656560"
+    },
     "schedule-from-date-link": {},
     "note-title-link": {},
+
     "hashtag": {
+      "color": "#E7C1C2",
       "type": ""
     },
     "attag": {
+      "color": "#E7C1C2",
       "type": ""
     },
     "phonenumber": {
@@ -351,7 +355,7 @@
       }
     },
     "#waiting": {
-      "regex": "^(.*#waiting.*)$",
+      "regex": "^* (.*#waiting.*)$",
       "matchPosition": 1,
       "textColor": "#DAE3E888",
       "font": "AvenirNext-Italic"

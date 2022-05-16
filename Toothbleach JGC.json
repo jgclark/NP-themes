@@ -17,7 +17,7 @@
 		"shouldOverwriteFont": true
 	},
 	
-	"orderedStyles": [
+	"__orderedStyles": [
 		"title-mark1",
 		"title-mark2",
 		"title-mark3",
@@ -198,15 +198,15 @@
 		},
 		
 		"schedule-to-date-link": {
-			"color": "#C88E4B"
+			"color": "#E8AE9B"
 		},
 		
 		"done-date": {
-			"color": "#AAAAAA"
+			"color": "#BBBBBB"
 		},
 		
 		"schedule-from-date-link": {
-			"color": "#C88E4B"
+			"color": "##E8AE9B"
 		},
 		
 		"note-title-link": {
@@ -214,10 +214,12 @@
 		},
 		
 		"hashtag": {
+			"color": "#88482B",
 			"type": ""
 		},
 		
 		"attag": {
+			"color": "#88482B",
 			"type": ""
 		},
 		
@@ -327,7 +329,7 @@
 
 		"checked": {
 			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\] )(.*)",
-			"color": "#BB97B863",
+			"color": "#DD97B863",
 			"matchPosition": 0,
 			"headIndent": 33
 		},
@@ -387,7 +389,7 @@
 			}
 		},
 		"#waiting": {
-			"regex": "^(.*#waiting.*)$",
+			"regex": "^* (.*#waiting.*)$",
 			"matchPosition": 1,
 			"textColor": "#222E3388",
 			"font": "AvenirNext-Italic"
