@@ -331,7 +331,8 @@
 			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\] )(.*)",
 			"color": "#DD97B863",
 			"matchPosition": 0,
-			"headIndent": 33
+			"headIndent": 33,
+			"strikethroughStyle": 1
 		},
 		"checked-canceled": {
 			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
@@ -358,7 +359,17 @@
 			"matchPosition": 4,
 			"backgroundColor": "#FFE5E5"
 		},
-
+		"flagged-2": {
+			"regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{2}\\h+.*)($|\\v)",
+			"matchPosition": 4,
+			"backgroundColor": "#FFD5D5"
+		},
+		"flagged-3": {
+			"regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{3}\\h+.*)($|\\v)",
+			"matchPosition": 4,
+			"backgroundColor": "#FFC5C5"
+		},
+		
 		"starred": {
 			"regex": "(^|\\v)(.*⭐️.*)($|\\v)",
 			"matchPosition": 2,
