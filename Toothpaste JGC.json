@@ -218,13 +218,13 @@
     },
 
 		"NoteLinks-main": {
-			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 2,
 			"color": "#C5487A",
       "backgroundColor": "#22C5487A"
 		},
 		"NoteLinks-main-done": {
-			"regex": "\\h(x\\[\\[)(.*?)(\\]\\])",
+			"regex": "(x\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isRevealOnCursorRange": true,
@@ -232,7 +232,7 @@
 			"color": "#97B853"
 		},
 		"NoteLinks-main-cancelled": {
-			"regex": "\\h(-\\[\\[)(.*?)(\\]\\])",
+			"regex": "(-\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isRevealOnCursorRange": true,
@@ -241,7 +241,7 @@
 		},
 
 		"NoteLinks-left-brackets": {
-			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
 			"color": " #C5487A",
 			"isMarkdownCharacter": true,
@@ -249,7 +249,7 @@
 			"isRevealOnCursorRange": true
 		},
 		"NoteLinks-right-brackets": {
-			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 3,
 			"color": " #C5487A",
 			"isMarkdownCharacter": true,
@@ -403,7 +403,7 @@
       "isRevealOnCursorRange": true
     },
     "timeblocks": {
-			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
+			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s((at|from)\\s+([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|(([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm))))|(([0-2]?\\d|NOON|noon|MIDNIGHT|midnight):[0-5]\\d\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|NOON|noon|MIDNIGHT|midnight):[0-5]\\d)?)(?=\\s|$)",
       "matchPosition": 1,
       "color": "#CC4999"
     }

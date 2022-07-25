@@ -266,12 +266,12 @@
 		},
 
 		"NoteLinks-main": {
-			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 2,
 			"color": "#C5487A"
 		},
 		"NoteLinks-main-done": {
-			"regex": "\\h(x\\[\\[)(.*?)(\\]\\])",
+			"regex": "(x\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isRevealOnCursorRange": true,
@@ -279,7 +279,7 @@
 			"color": "#97B853"
 		},
 		"NoteLinks-main-cancelled": {
-			"regex": "\\h(-\\[\\[)(.*?)(\\]\\])",
+			"regex": "(-\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isRevealOnCursorRange": true,
@@ -288,7 +288,7 @@
 		},
 
 		"NoteLinks-left-brackets": {
-			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
 			"color": " #C5487A",
 			"isMarkdownCharacter": true,
@@ -296,7 +296,7 @@
 			"isRevealOnCursorRange": true
 		},
 		"NoteLinks-right-brackets": {
-			"regex": "\\h(\\[\\[)(.*?)(\\]\\])",
+			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 3,
 			"color": " #C5487A",
 			"isMarkdownCharacter": true,
