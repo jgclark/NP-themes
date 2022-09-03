@@ -6,8 +6,8 @@
 	},
 	"editor": {
 		"backgroundColor": "#FAFAFA",
-		"altBackgroundColor": "#F9F9F9",
-		"toolbarBackgroundColor": "#EBEBE4",
+		"altBackgroundColor": "#F0F0F0",
+		"toolbarBackgroundColor": "#F0F0F0",
 		"tintColor": "#C87230",
 		"tintColor2": "#769EB3",
 		"textColor": "#222E33",
@@ -77,12 +77,12 @@
 			"font": "AvenirNext-Bold"
 		},
 		"title2": {
-			"color": "#8B82C9",
+			"color": "#7B72B9",
 			"size": 24,
 			"font": "AvenirNext-Bold"
 		},
 		"title3": {
-			"color": "#8B82C9",
+			"color": "#7B72B9",
 			"size": 20,
 			"font": "AvenirNext-Bold"
 		},
@@ -120,7 +120,8 @@
 		},
 
 		"bold": {
-			"color": "#996666",
+			"color": "#885555",
+			"color-old": "#996666",
 			"font": "AvenirNext-Bold"
 		},
 		"bold-left-mark": {
@@ -130,7 +131,8 @@
 			"color": "#CC6666"
 		},
 		"italic": {
-			"color": "#774444",
+			"color": "#885555",
+			"color-old": "#774444",
 			"font": "AvenirNext-Italic"
 		},
 		"italic-left-mark": {
@@ -140,7 +142,8 @@
 			"color": "#BB8888"
 		},
 		"boldItalic": {
-			"color": " #996666",
+			"color": "#885555",
+			"color-old": "#996666",
 			"font": "AvenirNext-BoldItalic"
 		},
 		"boldItalic-left-mark": {
@@ -229,12 +232,12 @@
 
 		"attribute": {
 			"regex": "^([^:]{3,})(::)",
-			"color": "#FF769EB3",
+			"color": "#767EA3",
 			"matchPosition": 1
 		},
 		"attribute-right-colons": {
 			"regex": "^([^:]{3,})(::)",
-			"color": "#99769EB3",
+			"color": "#99767EA3",
 			"matchPosition": 2,
 			"isMarkdownCharacter": true
 		},
@@ -328,15 +331,15 @@
 		},
 
 		"checked": {
-			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\] )(.*)",
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
 			"color": "#DD97B863",
-			"matchPosition": 0,
+			"matchPosition": 2,
 			"headIndent": 33
 		},
 		"checked-canceled": {
 			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
 			"matchPosition": 0,
-			"color": "#44C74853",
+			"color": "#66C74853",
 			"headIndent": 33,
 			"strikethroughStyle": 1
 		},
@@ -344,6 +347,7 @@
 			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
 			"matchPosition": 0,
 			"color": "#447B7C86",
+			"color-old": "#7B7C86",
 			"headIndent": 33
 		},
 
@@ -358,6 +362,16 @@
 			"matchPosition": 4,
 			"backgroundColor": "#FFE5E5"
 		},
+    "flagged-2": {
+      "regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{2}\\h+.*)($|\\v)",
+      "matchPosition": 4,
+      "backgroundColor": "#FFC5C5"
+    },
+    "flagged-3": {
+      "regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{3}\\h+.*)($|\\v)",
+      "matchPosition": 4,
+      "backgroundColor": "#FFA5A5"
+    },
 
 		"starred": {
 			"regex": "(^|\\v)(.*⭐️.*)($|\\v)",
@@ -367,27 +381,27 @@
 
 		"code": {
 			"font": "Menlo-Regular",
-			"color": "#3B3AB2",
+			"color": "#4A54A2",
 			"backgroundColor": "#F4F4FB"
 		},
 		"code-fence": {
-			"theme": "atelier-forest-light",
+			"theme": "github",
 			"body": {
 				"font": "Menlo-Regular",
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 15,
-				"backgroundColor": "#80e5f4e2"
+				"backgroundColor": "#e9f9e9"
 			},
-			"corner-radius": 7,
+			"corner-radius": 8,
 			"fence-open": {
-				"color": "#afafaf"
+				"color": "#6584A2"
 			},
 			"fence-close": {
-				"color": "#afafaf"
+				"color": "#6584A2"
 			},
 			"language-specifier": {
-				"size": 15,
+				"font": "Menlo-Italic",
 				"color": "#afafaf"
 			}
 		},
@@ -406,7 +420,7 @@
 		"Templates_tags": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
 			"matchPosition": 2,
-			"color": "#3B3AB2",
+			"color": "#4A54A2",
 			"font": "Menlo-Regular"
 		},
 		"Templates_tags-closer": {
@@ -432,6 +446,13 @@
 			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
 		  "matchPosition": 1,
 		  "color": "#CC4999"
-		}
+    },
+    "hidden-comment": {
+      "regex": "(%%)([^%]+)(%%)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#888888"
+    }
 	}
 }

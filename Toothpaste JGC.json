@@ -119,7 +119,8 @@
     },
 
     "bold": {
-      "color": "#CC6666",
+      "color": "#DA9696",
+      "color-old": "#CC6666",
       "font": "AvenirNext-Bold"
     },
     "bold-left-mark": {
@@ -129,7 +130,8 @@
       "color": "#66CC6666"
     },
     "italic": {
-      "color": "#96CBFE",
+      "color": "#DA9696",
+      "color-old": "#96CBFE",
       "font": "AvenirNext-Italic"
     },
     "italic-left-mark": {
@@ -163,8 +165,7 @@
       "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
       "color": "#9DC777",
       "matchPosition": 2,
-      "headIndent": 33,
-      "strikethroughStyle": 1
+      "headIndent": 33
     },
     "checked-canceled": {
       "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
@@ -217,6 +218,7 @@
       "color": "#769EB3"
     },
 
+
 		"NoteLinks-main": {
 			"regex": "(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 2,
@@ -258,15 +260,17 @@
 		},
 
     "attribute": {
-      "regex": "\\v([\\w\\h]{3,})(::)",
+      "regex": "^([^:]{3,})(::)",
       "color": "#8B82C9",
       "matchPosition": 1
     },
     "attribute-right-colons": {
-      "regex": "[\\v^]([^:]{3,})(::)",
-      "color": "#7B7299",
-      "matchPosition": 2
+      "regex": "^([^:]{3,})(::)",
+      "color": "#998B82C9",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true
     },
+
     "highlighted": {
       "regex": "(==)([^\\s].+?)(==)",
       "backgroundColor": "#55D2D21B",
@@ -364,7 +368,7 @@
         "color": "#afafaf"
       },
       "language-specifier": {
-        "size": 15,
+				"font": "Menlo-Italic",
         "color": "#afafaf"
       }
     },
@@ -406,9 +410,16 @@
       "isRevealOnCursorRange": true
     },
     "timeblocks": {
-			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s((at|from)\\s+([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|(([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm))))|(([0-2]?\\d|NOON|noon|MIDNIGHT|midnight):[0-5]\\d\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|NOON|noon|MIDNIGHT|midnight):[0-5]\\d)?)(?=\\s|$)",
+			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|(([0-2]?\\d|noon|midnight)(:[0-5]\\d)?\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm))))|(([0-2]?\\d|noon|midnight):[0-5]\\d\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight):[0-5]\\d)?)(?=\\s|$)",
       "matchPosition": 1,
       "color": "#CC4999"
+    },
+    "hidden-comment": {
+      "regex": "(%%)([^%]+)(%%)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#888888"
     }
   }
 }
