@@ -1,5 +1,5 @@
 {
-  "name": "Toothpaste JGC",
+  "name": "Toothpaste Condensed",
   "style": "Dark",
   "author": {
     "name": "Jonathan Clark"
@@ -58,7 +58,7 @@
     
     "body": {
       "color": "#DAE3E8",
-      "font": "AvenirNext-Regular",
+      "font": "AvenirNextCondensed-Regular",
       "lineSpacing": 0.8,
       "paragraphSpacing": 8,
       "paragraphSpacingBefore": 0
@@ -119,35 +119,35 @@
     },
 
     "bold": {
-      "color": "#DA9696",
-      "color-old": "#CC6666",
-      "font": "AvenirNext-Bold"
+      "color": "#CC6666",
+      "font": "AvenirNextCondensed-Bold"
     },
     "bold-left-mark": {
-      "color": "#66CC6666"
+      "color": "#99CC6666"
     },
     "bold-right-mark": {
-      "color": "#66CC6666"
+      "color": "#99CC6666"
     },
     "italic": {
-      "color": "#DA9696",
+      "color": "#CC6666",
       "color-old": "#96CBFE",
-      "font": "AvenirNext-Italic"
+      "font": "AvenirNextCondensed-Italic"
     },
     "italic-left-mark": {
-      "color": "#6696CBFE"
+      "color": "#99CC6666"
     },
     "italic-right-mark": {
-      "color": "#6696CBFE"
+      "color": "#99CC6666"
     },
     "boldItalic": {
-      "font": "AvenirNext-BoldItalic"
+      "color": "#CC6666",
+      "font": "AvenirNextCondensed-BoldItalic"
     },
     "boldItalic-left-mark": {
-      "color": "#66CC6666"
+      "color": "#99CC6666"
     },
     "boldItalic-right-mark": {
-      "color": "#66CC6666"
+      "color": "#99CC6666"
     },
 
     "todo": {
@@ -396,7 +396,7 @@
       "regex": "^* (.*#waiting.*)$",
       "matchPosition": 1,
       "textColor": "#DAE3E888",
-      "font": "AvenirNext-Italic"
+      "font": "AvenirNextCondensed-Italic"
     },
     "Templates_tags-opener": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",

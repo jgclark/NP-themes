@@ -1,5 +1,5 @@
 {
-	"name": "Toothbleach JGC",
+	"name": "Toothbleach Condensed",
 	"style": "Light",
 	"author": {
 		"name": "Jonathan Clark"
@@ -58,7 +58,7 @@
 		
 		"body": {
 			"color": "#222E33",
-			"font": "AvenirNext-Regular",
+			"font": "AvenirNextCondensed-Regular",
 			"lineSpacing": 0.8,
 			"paragraphSpacing": 8,
 			"paragraphSpacingBefore": 0
@@ -122,35 +122,35 @@
 		"bold": {
 			"color": "#885555",
 			"color-old": "#996666",
-			"font": "AvenirNext-Bold"
+			"font": "AvenirNextCondensed-Bold"
 		},
 		"bold-left-mark": {
-			"color": "#CC6666"
+			"color": "#66BB8888"
 		},
 		"bold-right-mark": {
-			"color": "#CC6666"
+			"color": "#66BB8888"
 		},
 		"italic": {
 			"color": "#885555",
 			"color-old": "#774444",
-			"font": "AvenirNext-Italic"
+			"font": "AvenirNextCondensed-Italic"
 		},
 		"italic-left-mark": {
-			"color": "#BB8888"
+			"color": "#66BB8888"
 		},
 		"italic-right-mark": {
-			"color": "#BB8888"
+			"color": "#66BB8888"
 		},
 		"boldItalic": {
 			"color": "#885555",
 			"color-old": "#996666",
-			"font": "AvenirNext-BoldItalic"
+			"font": "AvenirNextCondensed-BoldItalic"
 		},
 		"boldItalic-left-mark": {
-			"color": "#CC6666"
+			"color": "#66BB8888"
 		},
 		"boldItalic-right-mark": {
-			"color": "#CC6666"
+			"color": "#66BB8888"
 		},
 		
 		"todo": {
@@ -340,7 +340,7 @@
 
 		"checked": {
       "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
-			"color": "#DD97B863",
+			"color": "#97B863",
 			"matchPosition": 2,
 			"headIndent": 33,
       "lineSpacing": 0.90,
@@ -426,7 +426,7 @@
 			"regex": "^* (.*#waiting.*)$",
 			"matchPosition": 1,
 			"textColor": "#222E3388",
-			"font": "AvenirNext-Italic"
+			"font": "AvenirNextCondensed-Italic"
 		},
 		"Templates_tags-opener": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
