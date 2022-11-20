@@ -66,7 +66,7 @@
 		
 		"title1": {
 			"color": "#C5487A",
-			"size": 28,
+			"size": 24,
 			"font": "AvenirNext-Bold"
 		},
 		"title-in-frontmatter": {
@@ -78,7 +78,7 @@
 		},
 		"title2": {
 			"color": "#7B72B9",
-			"size": 24,
+			"size": 22,
 			"font": "AvenirNext-DemiBold"
 		},
 		"title3": {
@@ -94,13 +94,13 @@
 
 		"title-mark1": {
 			"color": "#66DAE3E8",
-			"size": 28,
+			"size": 22,
 			"paragraphSpacing": 3,
 			"font": "AvenirNext-DemiBold"
 		},
 		"title-mark2": {
 		   "color": "#66E9C062",
-		   "size": 24,
+		   "size": 20,
 			"paragraphSpacingBefore": 16,
 			"paragraphSpacing": 3,
 		   "font": "AvenirNext-DemiBold"
@@ -108,13 +108,14 @@
 		"title-mark3": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 20,
+			"size": 18,
 			"paragraphSpacingBefore": 12,
 			"paragraphSpacing": 3
 		},
 		"title-mark4": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
+			"size": 16,
 		   "paragraphSpacingBefore": 12,
 			"paragraphSpacing": 3
 		},
@@ -339,27 +340,29 @@
 		},
 
 		"checked": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
-			"color": "#97B863",
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\]).*",
+			"color": "#A0098308",
+			"_color": "#97B863",
 			"matchPosition": 2,
 			"headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
 		},
 		"checked-canceled": {
-			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
+			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
 			"matchPosition": 0,
-			"color": "#66C74853",
+			"color": "#A0E04F57", 
+			"_color": "#E04F57",
 			"strikethroughStyle": 1,
 			"headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
 		},
 		"checked-scheduled": {
-			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
+			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
 			"matchPosition": 0,
-			"color": "#447B7C86",
-			"color-old": "#7B7C86",
+			"color": "#A07B7C86",
+			"_color": "#7B7C86",
 			"headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
@@ -398,6 +401,12 @@
 			"color": "#4A54A2",
 			"backgroundColor": "#F4F4FB",
       "size": 14
+		},
+		"code-left-backtick": {
+			"color": "#804A54A2"
+		},
+		"code-right-backtick": {
+			"color": "#804A54A2"
 		},
 		"code-fence": {
 			"theme": "github",

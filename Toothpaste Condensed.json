@@ -65,20 +65,23 @@
     },
 
     "title1": {
-      "color": "#CC6666",
-      "size": 26,
+      "color": "#B74746",
+      "_color": "#CC6666",
+      "size": 24,
+      "paragraphSpacing": 3,
       "font": "AvenirNext-Bold"
     },
     "title-in-frontmatter": {
-        "regex": "^[tT]itle:\\s+(.*)",
-        "matchPosition": 1,
-        "color": "#CC6666",
-        "size": 24,
-        "font": "AvenirNext-Bold"
+      "regex": "^[tT]itle:\\s+(.*)",
+      "matchPosition": 1,
+      "color": "#B74746",
+      "_color": "#CC6666",
+      "size": 24,
+      "font": "AvenirNext-Bold"
     },
     "title2": {
       "color": "#E9C062",
-      "size": 24,
+      "size": 22,
       "font": "AvenirNext-DemiBold"
     },
     "title3": {
@@ -93,33 +96,36 @@
     },
     "title-mark1": {
       "color": "#66DAE3E8",
-      "size": 28,
+      "size": 22,
+      "paragraphSpacingBefore": 16,
       "paragraphSpacing": 3,
       "font": "AvenirNext-DemiBold"
     },
     "title-mark2": {
       "color": "#66E9C062",
-      "size": 24,
+      "size": 20,
       "font": "AvenirNext-DemiBold",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 3
     },
     "title-mark3": {
       "color": "#66E9C062",
-      "size": 20,
+      "size": 18,
       "font": "AvenirNext-DemiBold",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 3
     },
     "title-mark4": {
       "color": "#66E9C062",
+      "size": 16,
       "font": "AvenirNext-DemiBold",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 3
     },
 
     "bold": {
-      "color": "#CC6666",
+      "color": "#B74746",
+      "_color": "#CC6666",
       "font": "AvenirNextCondensed-Bold"
     },
     "bold-left-mark": {
@@ -129,8 +135,8 @@
       "color": "#99CC6666"
     },
     "italic": {
-      "color": "#CC6666",
-      "color-old": "#96CBFE",
+      "color": "#9B4241",
+      "_color": "#CC6666",
       "font": "AvenirNextCondensed-Italic"
     },
     "italic-left-mark": {
@@ -140,7 +146,8 @@
       "color": "#99CC6666"
     },
     "boldItalic": {
-      "color": "#CC6666",
+      "color": "#B74746",
+      "_color": "#CC6666",
       "font": "AvenirNextCondensed-BoldItalic"
     },
     "boldItalic-left-mark": {
@@ -152,7 +159,8 @@
 
     "todo": {
       "font": "noteplanstate",
-      "color": "#CC6666",
+      "color": "#B74746",
+      "_color": "#CC6666",
       "headIndent": 33,
       "size": 16,
       "lineSpacing": 0.90,
@@ -164,26 +172,29 @@
       "size": 16
     },
     "checked": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
-      "color": "#9DC777",
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\]).*",
+      "color": "#D0098308",
+      "_color": "#9DC777",
       "matchPosition": 2,
       "headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "checked-canceled": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
       "matchPosition": 0,
-      "color": "#AD6777",
+      "color": "#A0E04F57",
+      "_color": "#AD6777",
       "headIndent": 33,
       "strikethroughStyle": 1,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "checked-scheduled": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
       "matchPosition": 0,
-      "color": "#AAAA99",
+      "color": "#A07B7C86",
+      "_color": "#AAAA99",
       "headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
@@ -361,13 +372,19 @@
     "starred": {
       "regex": "(^|\\v)(.*⭐️.*)($|\\v)",
       "matchPosition": 2,
-      "backgroundColor": "##A0314A"
+      "backgroundColor": "#A0314A"
     },
 
     "code": {
       "font": "Menlo-Regular",
       "color": "#96CBFE",
       "size": 14
+    },
+    "code-left-backtick": {
+      "color": "#8096CBFE"
+    },
+    "code-right-backtick": {
+      "color": "#8096CBFE"
     },
     "code-fence": {
       "theme": "dark",

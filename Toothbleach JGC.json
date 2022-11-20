@@ -339,27 +339,29 @@
 		},
 
 		"checked": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\])([^@]*)",
-			"color": "#DD97B863",
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\]).*",
+			"color": "#A0098308",
+			"_color": "#97B863",
 			"matchPosition": 2,
 			"headIndent": 33,
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
 		},
 		"checked-canceled": {
-			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
+			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
 			"matchPosition": 0,
-			"color": "#66C74853",
+			"color": "#A0E04F57",
+			"_color": "#E04F57",
 			"strikethroughStyle": 1,
 			"headIndent": 33,
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
 		},
 		"checked-scheduled": {
-			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
+			"regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
 			"matchPosition": 0,
-			"color": "#447B7C86",
-			"color-old": "#7B7C86",
+			"color": "#A07B7C86",
+			"_color": "#7B7C86",
 			"headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
@@ -398,6 +400,12 @@
 			"color": "#4A54A2",
 			"backgroundColor": "#F4F4FB",
       "size": 14
+		},
+		"code-left-backtick": {
+			"color": "#804A54A2"
+		},
+		"code-right-backtick": {
+			"color": "#804A54A2"
 		},
 		"code-fence": {
 			"theme": "github",
