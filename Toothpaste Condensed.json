@@ -172,7 +172,7 @@
       "size": 16
     },
     "checked": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\]).*",
+      "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\]).*",
       "color": "#D0098308",
       "_color": "#9DC777",
       "matchPosition": 2,
@@ -181,7 +181,7 @@
       "paragraphSpacing": 4
     },
     "checked-canceled": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
+      "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
       "matchPosition": 0,
       "color": "#A0E04F57",
       "_color": "#AD6777",
@@ -191,7 +191,7 @@
       "paragraphSpacing": 4
     },
     "checked-scheduled": {
-      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
+      "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
       "matchPosition": 0,
       "color": "#A07B7C86",
       "_color": "#AAAA99",
@@ -282,9 +282,21 @@
 			"color": "#C5487A"
 		},
 
+    "field": {
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,})(:)(?=\\h+\\w+)",
+      "COMMENT": "Simplified form of YAML field identification",
+      "color": "#96CBFE",
+      "matchPosition": 1
+    },
+    "field-right-colons": {
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,})(:)(?=\\h+\\w+)",
+      "color": "#8B82C9",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true
+    },
+
     "attribute": {
       "regex": "^([^:]{3,})(::)",
-      "_color": "#8B82C9",
       "color": "#96CBFE",
       "matchPosition": 1,
       "lineSpacing": 0.90,
@@ -292,7 +304,6 @@
     },
     "attribute-right-colons": {
       "regex": "^([^:]{3,})(::)",
-      "_color": "#998B82C9",
       "color": "#8B82C9",
       "matchPosition": 2,
       "isMarkdownCharacter": true,
@@ -355,18 +366,18 @@
       "color": "#AA45A2E5"
     },
     "flagged-1": {
-      "regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{1}\\h+.*)($|\\v)",
-      "matchPosition": 4,
+      "regex": "(^|\\v)\\h*[\\*\\-\\+]\\h*(\\[ \\]\\h+|\\h+)(\\!{1}\\h+.*)($|\\v)",
+      "matchPosition": 3,
       "backgroundColor": "#A0718A"
     },
     "flagged-2": {
-      "regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{2}\\h+.*)($|\\v)",
-      "matchPosition": 4,
+      "regex": "(^|\\v)\\h*[\\*\\-\\+]\\h*(\\[ \\]\\h+|\\h+)(\\!{2}\\h+.*)($|\\v)",
+      "matchPosition": 3,
       "backgroundColor": "#A0516A"
     },
     "flagged-3": {
-      "regex": "(^|\\v)\\h*(\\*|-)\\h*(\\[ \\]\\h+|\\h+)(\\!{3}\\h+.*)($|\\v)",
-      "matchPosition": 4,
+      "regex": "(^|\\v)\\h*[\\*\\-\\+]\\h*(\\[ \\]\\h+|\\h+)(\\!{3}\\h+.*)($|\\v)",
+      "matchPosition": 3,
       "backgroundColor": "#A0314A"
     },
     "starred": {
