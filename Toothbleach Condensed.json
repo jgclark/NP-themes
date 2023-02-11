@@ -73,11 +73,11 @@
 			"regex": "^[tT]itle:\\s+(.*)",
 			"matchPosition": 1,
 			"color": "#C5487A",
-			"size": 24,
+			"size": 22,
 			"font": "AvenirNext-Bold"
 		},
 		"title2": {
-			"color": "#7B72B9",
+			"color": "#AB5699",
 			"size": 22,
 			"font": "AvenirNext-DemiBold"
 		},
@@ -94,32 +94,32 @@
 
 		"title-mark1": {
 			"color": "#66DAE3E8",
+			"font": "AvenirNext-DemiBold",
 			"size": 22,
-			"paragraphSpacing": 3,
-			"font": "AvenirNext-DemiBold"
+			"paragraphSpacingBefore": 18,
+			"paragraphSpacing": 2
 		},
 		"title-mark2": {
-		   "color": "#66E9C062",
-		   "size": 20,
-			"paragraphSpacingBefore": 16,
-			"paragraphSpacing": 3,
-		   "font": "AvenirNext-DemiBold"
+			"color": "#66E9C062",
+			"font": "AvenirNext-DemiBold",
+			"size": 18,
+			"paragraphSpacingBefore": 18,
+			"paragraphSpacing": 2
 		},
 		"title-mark3": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 18,
-			"paragraphSpacingBefore": 12,
-			"paragraphSpacing": 3
+			"size": 17,
+			"paragraphSpacingBefore": 14,
+			"paragraphSpacing": 1
 		},
 		"title-mark4": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 16,
-		   "paragraphSpacingBefore": 12,
-			"paragraphSpacing": 3
+			"size": 15,
+			"paragraphSpacingBefore": 14,
+			"paragraphSpacing": 1
 		},
-
 		"bold": {
 			"color": "#885555",
 			"color-old": "#996666",
@@ -238,13 +238,13 @@
 		},
 
 		"field": {
-			"regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,})(:)(?=\\h+\\w+)",
-			"COMMENT": "Simplified form of YAML field identification",
+			"regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+\\w+)",
+			"COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name",
 			"color": "#5A64A2",
 			"matchPosition": 1
 		},
 		"field-right-colons": {
-			"regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,})(:)(?=\\h+\\w+)",
+			"regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+\\w+)",
 			"color": "#5A64A2",
 			"matchPosition": 2,
 			"isMarkdownCharacter": true

@@ -80,7 +80,7 @@
       "font": "AvenirNext-Bold"
     },
     "title2": {
-      "color": "#E9C062",
+      "color": "#C99056",
       "size": 24,
       "font": "AvenirNext-DemiBold"
     },
@@ -94,33 +94,34 @@
       "size": 18,
      "font": "AvenirNext-DemiBold"
     },
+
     "title-mark1": {
       "color": "#66DAE3E8",
-      "size": 24,
-      "paragraphSpacingBefore": 16,
-      "paragraphSpacing": 3,
+      "size": 28,
+      "paragraphSpacingBefore": 18,
+      "paragraphSpacing": 2,
       "font": "AvenirNext-DemiBold"
     },
     "title-mark2": {
       "color": "#66E9C062",
-      "size": 22,
+      "size": 24,
       "font": "AvenirNext-DemiBold",
-      "paragraphSpacingBefore": 16,
-      "paragraphSpacing": 3
+      "paragraphSpacingBefore": 18,
+      "paragraphSpacing": 2
     },
     "title-mark3": {
       "color": "#66E9C062",
       "size": 18,
       "font": "AvenirNext-DemiBold",
-      "paragraphSpacingBefore": 12,
-      "paragraphSpacing": 3
+      "paragraphSpacingBefore": 14,
+      "paragraphSpacing": 1
     },
     "title-mark4": {
       "color": "#66E9C062",
       "size": 16,
       "font": "AvenirNext-DemiBold",
-      "paragraphSpacingBefore": 12,
-      "paragraphSpacing": 3
+      "paragraphSpacingBefore": 14,
+      "paragraphSpacing": 1
     },
 
     "bold": {
@@ -283,13 +284,13 @@
 		},
 
     "field": {
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,})(:)(?=\\h+\\w+)",
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+\\w+)",
       "COMMENT": "Simplified form of YAML field identification",
       "color": "#96CBFE",
       "matchPosition": 1
     },
     "field-right-colons": {
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,})(:)(?=\\h+\\w+)",
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+\\w+)",
       "color": "#8B82C9",
       "matchPosition": 2,
       "isMarkdownCharacter": true
@@ -470,6 +471,11 @@
       "isRevealOnCursorRange": true,
       "isHiddenWithoutCursor": true,
       "color": "#888888"
+    },
+    "unfinished": {
+      "regex": "\\?\\?\\?",
+      "color": "#000000",
+      "backgroundColor": "#FF2020"
     }
   }
 }
