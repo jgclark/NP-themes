@@ -100,9 +100,9 @@
 			"paragraphSpacing": 2
 		},
 		"title-mark2": {
-			"color": "#66E9C062",
-			"font": "AvenirNext-DemiBold",
-			"size": 18,
+		   "color": "#66E9C062",
+		   "font": "AvenirNext-DemiBold",
+		   "size": 18,
 			"paragraphSpacingBefore": 18,
 			"paragraphSpacing": 2
 		},
@@ -117,9 +117,10 @@
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
 			"size": 15,
-			"paragraphSpacingBefore": 14,
+		   "paragraphSpacingBefore": 14,
 			"paragraphSpacing": 1
 		},
+
 		"bold": {
 			"color": "#885555",
 			"color-old": "#996666",
@@ -386,18 +387,18 @@
 		},
 
 		"flagged-1": {
-			"regex": "(^|\\v)\\h*[\\*\\-\\+]\\h*(\\[ \\]\\h+|\\h+)(\\!{1}\\h+.*)($|\\v)",
-			"matchPosition": 3,
+			"regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
+			"matchPosition": 2,
 			"backgroundColor": "#FFE5E5"
 		},
     "flagged-2": {
-			"regex": "(^|\\v)\\h*[\\*\\-\\+]\\h*(\\[ \\]\\h+|\\h+)(\\!{2}\\h+.*)($|\\v)",
-			"matchPosition": 3,
+			"regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
+			"matchPosition": 2,
 			"backgroundColor": "#FFC5C5"
     },
     "flagged-3": {
-			"regex": "(^|\\v)\\h*[\\*\\-\\+]\\h*(\\[ \\]\\h+|\\h+)(\\!{3}\\h+.*)($|\\v)",
-			"matchPosition": 3,
+			"regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
+			"matchPosition": 2,
 			"backgroundColor": "#FFA5A5"
     },
 
@@ -490,6 +491,11 @@
       "isRevealOnCursorRange": true,
       "isHiddenWithoutCursor": true,
       "color": "#888888"
-    }
+    },
+		"unfinished": {
+			"regex": "\\?\\?\\?",
+			"color": "#FFFFFF",
+			"backgroundColor": "#FF2020"
+		}
 	}
 }
