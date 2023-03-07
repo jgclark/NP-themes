@@ -233,14 +233,15 @@
     "phonenumber": {
       "color": "#769EB3"
     },
+    
     "NoteLinks-main": {
-      "regex": "(\\[\\[)(.*?)(\\]\\])",
+      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 2,
       "color": "#C5487A",
       "backgroundColor": "#22C5487A"
     },
     "NoteLinks-left-brackets": {
-      "regex": "(\\[\\[)(.*?)(\\]\\])",
+      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 1,
       "color": " #C5487A",
       "isMarkdownCharacter": true,
@@ -248,15 +249,16 @@
       "isRevealOnCursorRange": true
     },
     "NoteLinks-right-brackets": {
-      "regex": "(\\[\\[)(.*?)(\\]\\])",
+      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 3,
       "color": " #C5487A",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
+
     "NoteLinks-main-done": {
-      "regex": "(x\\[\\[)(.*?)(\\]\\])",
+      "regex": "(?:^|\\h)(x\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 1,
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true,
@@ -264,21 +266,22 @@
       "color": "#97B853"
     },
     "NoteLinks-main-cancelled": {
-      "regex": "(-\\[\\[)(.*?)(\\]\\])",
+      "regex": "(?:^|\\h)(-\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 1,
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true,
       "font": "noteplanstate",
       "color": "#C5487A"
     },
+
     "field": {
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+\\w+)",
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
       "COMMENT": "Simplified form of YAML field identification",
       "color": "#96CBFE",
       "matchPosition": 1
     },
     "field-right-colons": {
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+\\w+)",
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
       "color": "#8B82C9",
       "matchPosition": 2,
       "isMarkdownCharacter": true
