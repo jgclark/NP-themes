@@ -484,13 +484,23 @@
 		  "matchPosition": 1,
 		  "color": "#CC4999"
     },
-    "hidden-comment": {
-      "regex": "(%%)([^%]+)(%%)",
-      "matchPosition": 2,
-      "isRevealOnCursorRange": true,
-      "isHiddenWithoutCursor": true,
-      "color": "#888888"
-    },
+		"line-comment-hide": {
+			"regex": "(.*)( // )(.*)",
+			"matchPosition": 3,
+			"isHiddenWithoutCursor": true,
+			"color": "#AA888888"
+		},
+		"line-comment-show": {
+			"regex": "(.* // .*)",
+			"matchPosition": 1,
+			"isRevealOnCursorRange": true
+		},
+		"line-comment-slash": {
+			"regex": "(.*)( // )",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"color": "#AA888888"
+		},
 		"unfinished": {
 			"regex": "\\?\\?\\?",
 			"color": "#FFFFFF",

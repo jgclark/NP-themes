@@ -4,7 +4,7 @@
 
 Here are the two pairs of Themes that I use and maintain for you to use, study or pilfer as you feel like.  Remember that you can change the overall font size in Preferences > Editor > Editor Font Size.
 
-They feature `!` / `!!` / `!!!` priority markers with highlighting; strikethrough; highlighting; field keyword colouring; attributes; hiding of `[[...]]` markers surrounding note links, and more. 
+They feature `!` / `!!` / `!!!` priority markers with highlighting; strikethrough; highlighting; field keyword colouring; attributes; hiding of `[[...]]` markers surrounding note links, partially-hidden comments at the end of a line following `//` etc.
 
 ### Toothbleach JGC / Toothpaste JGC
 Toothbleach sample:
