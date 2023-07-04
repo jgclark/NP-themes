@@ -16,7 +16,7 @@
 		"timeBlockColor": "#E9C062",
 		"shouldOverwriteFont": false
 	},
-	
+
 	"__orderedStyles": [
 		"title-mark1",
 		"title-mark2",
@@ -55,7 +55,7 @@
 	],
 
 	"styles": {
-		
+
 		"body": {
 			"color": "#222E33",
 			"font": "AvenirNextCondensed-Regular",
@@ -63,7 +63,7 @@
 			"paragraphSpacing": 8,
 			"paragraphSpacingBefore": 0
 		},
-		
+
 		"title1": {
 			"color": "#C5487A",
 			"size": 24,
@@ -154,7 +154,7 @@
 		"boldItalic-right-mark": {
 			"color": "#66BB8888"
 		},
-		
+
 		"todo": {
 			"font": "noteplanstate",
 			"color": "#CC6666",
@@ -163,77 +163,78 @@
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
 		},
-		
+
 		"checked-todo-characters": {
 			"font": "noteplanstate",
 			"headIndent": 33,
       "size": 16
 		},
-		
+
 		"special-char": {
 			"font": "Menlo-Regular"
 		},
-		
+
 		"tabbed": {
 			"headIndent": 43
 		},
-		
+
 		"quote-mark": {
-			"color": "#979893",
+			"color": "#35443250",
 			"font": "noteplanstate",
-			"headIndent": 33
+			"headIndent": 33,
+			"size": 16
 		},
-		
 		"quote-content": {
 			"color": "#434343",
 			"type": "italic",
-			"headIndent": 33
+			"headIndent": 33,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4,
+			"paragraphSpacingBefore": 0
 		},
-		
+
 		"markdown-link": {
 			"color": "#C89240"
 		},
-		
 		"markdown-link-url": {
 			"color": "#465E68"
 		},
-		
 		"link": {
 			"color": "#C88E6B"
 		},
-		
+
 		"time": {
 			"color": "#E36868"
 		},
-		
+
 		"schedule-to-date-link": {
 			"color": "#E8AE9B"
 		},
-		
+
 		"done-date": {
 			"color": "#BBBBBB"
 		},
-		
+
 		"schedule-from-date-link": {
 			"color": "##E8AE9B"
 		},
-		
+
 		"note-title-link": {
 			"color": "#97B853"
 		},
-		
+
 		"hashtag": {
 			"_color": "#88482B",
 			"color": "#5A64A2",
 			"type": ""
 		},
-		
+
 		"attag": {
 			"_color": "#88482B",
 			"color": "#5A64A2",
 			"type": ""
 		},
-		
+
 		"phonenumber": {
 			"color": "#769EB3"
 		},
@@ -363,7 +364,7 @@
 		"checked-canceled": {
 			"regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
 			"matchPosition": 0,
-			"color": "#A0E04F57", 
+			"color": "#A0E04F57",
 			"_color": "#E04F57",
 			"strikethroughStyle": 1,
 			"headIndent": 33,

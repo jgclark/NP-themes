@@ -200,7 +200,7 @@
       "headIndent": 43
     },
     "quote-mark": {
-      "color": "#9DC777",
+      "color": "#354432",
       "font": "noteplanstate",
       "headIndent": 33,
       "size": 16
@@ -233,7 +233,7 @@
     "phonenumber": {
       "color": "#769EB3"
     },
-    
+
     "NoteLinks-main": {
       "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 2,
