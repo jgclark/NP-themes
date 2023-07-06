@@ -391,7 +391,7 @@
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 14,
-        "backgroundColor": "#253422"
+        "_backgroundColor": "#25342290"
       },
       "corner-radius": 7,
       "fence-open": {
