@@ -1,5 +1,6 @@
 {
   "name": "Toothpaste",
+  "COMMENT": "This is NOT updated for new theming features in NP 3.9.4 yet, so there's a version that can work with earlier versions.",
   "style": "Dark",
   "author": {
     "name": "Jonathan Clark"

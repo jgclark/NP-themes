@@ -1,9 +1,11 @@
 {
 	"name": "Toothbleach Condensed",
+	"COMMENT": "This is updated for new theming features in NP 3.9.4. It will not work fully on earlier versions of NP.",
 	"style": "Light",
 	"author": {
 		"name": "Jonathan Clark"
 	},
+	"comment": "appear to be able to use #AARRGGBB most of the time",
 	"editor": {
 		"backgroundColor": "#FAFAFA",
 		"altBackgroundColor": "#F0F0F0",
@@ -59,6 +61,14 @@
 		"body": {
 			"color": "#222E33",
 			"font": "AvenirNextCondensed-Regular",
+			"lineSpacing": 0.8,
+			"paragraphSpacing": 8,
+			"paragraphSpacingBefore": 0
+		},
+
+		"tabbed": {
+			"COMMENT": "for anything indented",
+			"headIndent": 43,
 			"lineSpacing": 0.8,
 			"paragraphSpacing": 8,
 			"paragraphSpacingBefore": 0
@@ -127,10 +137,10 @@
 			"font": "AvenirNextCondensed-Bold"
 		},
 		"bold-left-mark": {
-			"color": "#66BB8888"
+			"color": "#88885555"
 		},
 		"bold-right-mark": {
-			"color": "#66BB8888"
+			"color": "#88885555"
 		},
 		"italic": {
 			"color": "#885555",
@@ -138,10 +148,10 @@
 			"font": "AvenirNextCondensed-Italic"
 		},
 		"italic-left-mark": {
-			"color": "#66BB8888"
+			"color": "#88885555"
 		},
 		"italic-right-mark": {
-			"color": "#66BB8888"
+			"color": "#88885555"
 		},
 		"boldItalic": {
 			"color": "#885555",
@@ -149,19 +159,26 @@
 			"font": "AvenirNextCondensed-BoldItalic"
 		},
 		"boldItalic-left-mark": {
-			"color": "#66BB8888"
+			"color": "#88885555"
 		},
 		"boldItalic-right-mark": {
-			"color": "#66BB8888"
+			"color": "#88885555"
 		},
 
-		"todo": {
-			"font": "noteplanstate",
-			"color": "#CC6666",
-			"headIndent": 33,
-      "size": 16,
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4
+		"underline": {
+			"underlineStyle": 2,
+			"underlineColor": "#885555"
+		},
+		"underline-left-tilde": {
+			"color": "#88885555"
+		},
+		"underline-right-tilde": {
+			"color": "#88885555"
+		},
+
+		"working-on": {
+			"backgroundColor": "#12006600",
+			"paragraphSpacing": 4
 		},
 
 		"checked-todo-characters": {
@@ -172,10 +189,6 @@
 
 		"special-char": {
 			"font": "Menlo-Regular"
-		},
-
-		"tabbed": {
-			"headIndent": 43
 		},
 
 		"quote-mark": {
@@ -212,11 +225,12 @@
 		},
 
 		"done-date": {
-			"color": "#BBBBBB"
+			"color": "#AAA",
+			"size": 14
 		},
 
 		"schedule-from-date-link": {
-			"color": "##E8AE9B"
+			"color": "#E8AE9B"
 		},
 
 		"note-title-link": {
@@ -224,14 +238,14 @@
 		},
 
 		"hashtag": {
-			"_color": "#88482B",
 			"color": "#5A64A2",
+			"backgroundColor": "#10335511",
 			"type": ""
 		},
 
 		"attag": {
-			"_color": "#88482B",
 			"color": "#5A64A2",
+			"backgroundColor": "#10553311",
 			"type": ""
 		},
 
@@ -240,8 +254,8 @@
 		},
 
 		"field": {
-			"regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
 			"COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name",
+			"regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
 			"color": "#5A64A2",
 			"matchPosition": 1
 		},
@@ -265,29 +279,27 @@
 		},
 
 		"highlighted": {
-			"regex": "(==)([^\\s].+?)(==)",
+			"__regex": "(==)([^\\s].+?)(==)",
 			"backgroundColor": "#55D2D21B",
 			"order": 35,
-			"matchPosition": 2,
+			"__matchPosition": 2,
 			"isRevealOnCursorRange": true
 		},
 		"highlighted-left-marker": {
-			"regex": "(==)([^\\s].+?)(==)",
+			"__regex": "(==)([^\\s].+?)(==)",
 			"color": "#AA45A2E5",
-			"backgroundColor": "#7745A2E5",
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true,
-			"matchPosition": 1
+			"__matchPosition": 1
 		},
 		"highlighted-right-marker": {
-			"regex": "(==)([^\\s].+?)(==)",
+			"__regex": "(==)([^\\s].+?)(==)",
 			"color": "#AA45A2E5",
-			"backgroundColor": "#7745A2E5",
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true,
-			"matchPosition": 3
+			"__matchPosition": 3
 		},
 
 		"NoteLinks-main": {
@@ -330,26 +342,35 @@
 		},
 
 		"strikethrough": {
-			"regex": "(~~)([^~]+)(~~)",
-			"matchPosition": 2,
+			"__regex": "(~~)([^~]+)(~~)",
+			"__matchPosition": 2,
 			"strikethroughStyle": 2,
 			"isRevealOnCursorRange": true
 		},
 		"strikethrough-left-tilde": {
-			"regex": "(~~)([^~]+)(~~)",
-			"matchPosition": 1,
+			"__regex": "(~~)([^~]+)(~~)",
+			"__matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
 			"color": "#d9d9d9",
 			"isRevealOnCursorRange": true
 		},
 		"strikethrough-right-tilde": {
-			"regex": "(~~)([^~]+)(~~)",
-			"matchPosition": 3,
+			"__regex": "(~~)([^~]+)(~~)",
+			"__matchPosition": 3,
 			"isMarkdownCharacter": true,
 			"color": "#d9d9d9",
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true
+		},
+
+		"todo": {
+			"font": "noteplanstate",
+			"color": "#CC6666",
+			"headIndent": 33,
+			"size": 16,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
 		},
 
 		"checked": {
@@ -388,19 +409,22 @@
 		},
 
 		"flagged-1": {
-			"regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
-			"matchPosition": 2,
-			"backgroundColor": "#FFE5E5"
+			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
+			"__matchPosition": 2,
+			"backgroundColor": "#FFE5E5",
+			"paragraphSpacing": 4
 		},
     "flagged-2": {
-			"regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
-			"matchPosition": 2,
-			"backgroundColor": "#FFC5C5"
+			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
+			"__matchPosition": 2,
+			"backgroundColor": "#FFC5C5",
+			"paragraphSpacing": 4
     },
     "flagged-3": {
-			"regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
-			"matchPosition": 2,
-			"backgroundColor": "#FFA5A5"
+			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
+			"__matchPosition": 2,
+			"backgroundColor": "#FFA5A5",
+			"paragraphSpacing": 4
     },
 
 		"starred": {
@@ -416,10 +440,10 @@
       "size": 14
 		},
 		"code-left-backtick": {
-			"color": "#804A54A2"
+			"color": "#884A54A2"
 		},
 		"code-right-backtick": {
-			"color": "#804A54A2"
+			"color": "#884A54A2"
 		},
 		"code-fence": {
 			"theme": "github",

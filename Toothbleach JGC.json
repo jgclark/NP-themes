@@ -1,5 +1,6 @@
 {
 	"name": "Toothbleach JGC",
+	"COMMENT": "This is NOT updated for new theming features in NP 3.9.4 yet, so there's a version that can work with earlier versions.",
 	"style": "Light",
 	"author": {
 		"name": "Jonathan Clark"
@@ -213,7 +214,8 @@
 		},
 
 		"done-date": {
-			"color": "#BBBBBB"
+			"color": "#AAA",
+			"size": 14
 		},
 
 		"schedule-from-date-link": {
@@ -225,14 +227,13 @@
 		},
 
 		"hashtag": {
-			"_color": "#88482B",
 			"color": "#5A64A2",
+			"backgroundColor": "#10335511",
 			"type": ""
 		},
-
 		"attag": {
-			"_color": "#88482B",
 			"color": "#5A64A2",
+			"backgroundColor": "#10553311",
 			"type": ""
 		},
 

@@ -1,5 +1,6 @@
 {
   "name": "Toothpaste Condensed",
+  "COMMENT": "This is updated for new theming features in NP 3.9.4. It will not work fully on earlier versions of NP.",
   "style": "Dark",
   "author": {
     "name": "Jonathan Clark"
@@ -52,14 +53,25 @@
     "title3",
     "note-title-link"
   ],
+
   "styles": {
+
     "body": {
-      "color": "#DAE3E8",
+      "color": "#E5E5EC",
       "font": "AvenirNextCondensed-Regular",
       "lineSpacing": 0.8,
       "paragraphSpacing": 8,
       "paragraphSpacingBefore": 0
     },
+
+        "tabbed": {
+          "COMMENT": "for anything indented",
+          "headIndent": 43,
+          "lineSpacing": 0.8,
+          "paragraphSpacing": 8,
+          "paragraphSpacingBefore": 0
+        },
+
     "title1": {
       "color": "#B74746",
       "_color": "#CC6666",
@@ -90,6 +102,7 @@
       "size": 18,
       "font": "AvenirNext-DemiBold"
     },
+
     "title-mark1": {
       "color": "#66DAE3E8",
       "size": 28,
@@ -118,20 +131,20 @@
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 1
     },
+
     "bold": {
-      "color": "#B74746",
+      "color": "#C75756",
       "_color": "#CC6666",
       "font": "AvenirNextCondensed-Bold"
     },
     "bold-left-mark": {
-      "color": "#99CC6666"
+      "color": "#99C75756"
     },
     "bold-right-mark": {
-      "color": "#99CC6666"
+      "color": "#99C75756"
     },
     "italic": {
-      "color": "#9B4241",
-      "_color": "#CC6666",
+      "color": "#CC7777",
       "font": "AvenirNextCondensed-Italic"
     },
     "italic-left-mark": {
@@ -141,16 +154,33 @@
       "color": "#99CC6666"
     },
     "boldItalic": {
-      "color": "#B74746",
+      "color": "#C75756",
       "_color": "#CC6666",
       "font": "AvenirNextCondensed-BoldItalic"
     },
     "boldItalic-left-mark": {
-      "color": "#99CC6666"
+      "color": "#99C75756"
     },
     "boldItalic-right-mark": {
-      "color": "#99CC6666"
+      "color": "#99C75756"
     },
+
+    "underline": {
+      "underlineStyle": 2,
+      "underlineColor": "#B74746"
+    },
+    "underline-left-tilde": {
+      "color": "#88B74746"
+    },
+    "underline-right-tilde": {
+      "color": "#88B74746"
+    },
+
+    "working-on": {
+      "backgroundColor": "#12006600",
+      "paragraphSpacing": 4
+    },
+
     "todo": {
       "font": "noteplanstate",
       "color": "#B74746",
@@ -196,9 +226,7 @@
     "special-char": {
       "font": "Menlo-Regular"
     },
-    "tabbed": {
-      "headIndent": 43
-    },
+
     "quote-mark": {
       "color": "#354432",
       "font": "noteplanstate",
@@ -275,74 +303,74 @@
     },
 
     "field": {
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
       "COMMENT": "Simplified form of YAML field identification",
-      "color": "#96CBFE",
-      "matchPosition": 1
+      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
+      "matchPosition": 1,
+      "color": "#96CBFE"
     },
     "field-right-colons": {
       "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
-      "color": "#8B82C9",
       "matchPosition": 2,
+      "color": "#8B82C9",
       "isMarkdownCharacter": true
     },
+
     "attribute": {
       "regex": "^([^:]{3,})(::)",
-      "color": "#96CBFE",
       "matchPosition": 1,
+      "color": "#96CBFE",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "attribute-right-colons": {
       "regex": "^([^:]{3,})(::)",
-      "color": "#8B82C9",
       "matchPosition": 2,
+      "color": "#8B82C9",
       "isMarkdownCharacter": true,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
+
     "highlighted": {
-      "regex": "(==)([^\\s].+?)(==)",
+      "__regex": "(==)([^\\s].+?)(==)",
+      "__matchPosition": 2,
       "backgroundColor": "#66D2D21B",
       "order": 35,
-      "matchPosition": 2,
       "isRevealOnCursorRange": true
     },
-    "highlighted-left-colon": {
-      "regex": "(==)([^\\s].+?)(==)",
+    "highlighted-left-marker": {
+      "__regex": "(==)([^\\s].+?)(==)",
+      "__matchPosition": 1,
       "color": "#AA45A2E5",
-      "backgroundColor": "#7745A2E5",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true,
-      "matchPosition": 1
+      "isRevealOnCursorRange": true
     },
-    "highlighted-right-colon": {
-      "regex": "(==)([^\\s].+?)(==)",
+    "highlighted-right-marker": {
+      "__regex": "(==)([^\\s].+?)(==)",
+      "__matchPosition": 3,
       "color": "#AA45A2E5",
-      "backgroundColor": "#7745A2E5",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true,
-      "matchPosition": 3
+      "isRevealOnCursorRange": true
     },
     "strikethrough": {
-      "regex": "(~~)([^~]+)(~~)",
-      "matchPosition": 2,
+      "__regex": "(~~)([^~]+)(~~)",
+      "__matchPosition": 2,
       "strikethroughStyle": 2,
       "isRevealOnCursorRange": true
     },
     "strikethrough-left-tilde": {
-      "regex": "(~~)([^~]+)(~~)",
-      "matchPosition": 1,
+      "__regex": "(~~)([^~]+)(~~)",
+      "__matchPosition": 1,
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "color": "#d9d9d9",
       "isRevealOnCursorRange": true
     },
     "strikethrough-right-tilde": {
-      "regex": "(~~)([^~]+)(~~)",
-      "matchPosition": 3,
+      "__regex": "(~~)([^~]+)(~~)",
+      "__matchPosition": 3,
       "isMarkdownCharacter": true,
       "color": "#d9d9d9",
       "isHiddenWithoutCursor": true,
@@ -354,18 +382,18 @@
       "color": "#AA45A2E5"
     },
     "flagged-1": {
-      "regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
-      "matchPosition": 2,
+      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
+      "__matchPosition": 2,
       "backgroundColor": "#A0718A"
     },
     "flagged-2": {
-      "regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
-      "matchPosition": 2,
+      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
+      "__matchPosition": 2,
       "backgroundColor": "#A0516A"
     },
     "flagged-3": {
-      "regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
-      "matchPosition": 2,
+      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
+      "__matchPosition": 2,
       "backgroundColor": "#A0314A"
     },
     "starred": {
