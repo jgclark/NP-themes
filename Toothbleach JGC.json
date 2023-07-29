@@ -171,7 +171,9 @@
 		},
 
 		"special-char": {
-			"font": "Menlo-Regular"
+			"COMMENT": "Overriding to avoid appearance of em-dash for hyphens.",
+			"__font": "Menlo-Regular",
+			"font": "AvenirNext-Regular"
 		},
 
 		"tabbed": {

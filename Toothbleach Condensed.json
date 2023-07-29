@@ -188,7 +188,9 @@
 		},
 
 		"special-char": {
-			"font": "Menlo-Regular"
+			"COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
+			"__font": "Menlo-Regular",
+			"font": "AvenirNext-Regular"
 		},
 
 		"quote-mark": {
