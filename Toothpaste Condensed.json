@@ -39,6 +39,8 @@
     "checked-todo-characters",
     "todo",
     "checked",
+    "checked-canceled",
+    "checked-scheduled",
     "quote-mark",
     "tabbed",
     "NoteLinks-main",
@@ -53,9 +55,7 @@
     "title3",
     "note-title-link"
   ],
-
   "styles": {
-
     "body": {
       "color": "#E5E5EC",
       "font": "AvenirNextCondensed-Regular",
@@ -63,15 +63,13 @@
       "paragraphSpacing": 8,
       "paragraphSpacingBefore": 0
     },
-
-        "tabbed": {
-          "COMMENT": "for anything indented",
-          "headIndent": 43,
-          "lineSpacing": 0.8,
-          "paragraphSpacing": 8,
-          "paragraphSpacingBefore": 0
-        },
-
+    "tabbed": {
+      "COMMENT": "for anything indented",
+      "headIndent": 43,
+      "lineSpacing": 0.8,
+      "paragraphSpacing": 8,
+      "paragraphSpacingBefore": 0
+    },
     "title1": {
       "color": "#B74746",
       "_color": "#CC6666",
@@ -102,7 +100,6 @@
       "size": 18,
       "font": "AvenirNext-DemiBold"
     },
-
     "title-mark1": {
       "color": "#66DAE3E8",
       "size": 28,
@@ -131,7 +128,6 @@
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 1
     },
-
     "bold": {
       "color": "#C75756",
       "_color": "#CC6666",
@@ -164,7 +160,6 @@
     "boldItalic-right-mark": {
       "color": "#99C75756"
     },
-
     "underline": {
       "underlineStyle": 2,
       "underlineColor": "#B74746"
@@ -175,12 +170,10 @@
     "underline-right-tilde": {
       "color": "#88B74746"
     },
-
     "working-on": {
       "backgroundColor": "#12006600",
       "paragraphSpacing": 4
     },
-
     "todo": {
       "font": "noteplanstate",
       "color": "#B74746",
@@ -196,11 +189,8 @@
       "size": 16
     },
     "checked": {
-      "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[x\\]).*",
       "color": "#D0098308",
       "_color": "#9DC777",
-      "matchPosition": 2,
-      "headIndent": 33,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
@@ -223,13 +213,11 @@
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
-
-    "special-char": {
+    "__special-char": {
       "COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
       "__font": "Menlo-Regular",
       "font": "AvenirNext-Regular"
     },
-
     "quote-mark": {
       "color": "#354432",
       "font": "noteplanstate",
@@ -264,7 +252,6 @@
     "phonenumber": {
       "color": "#769EB3"
     },
-
     "NoteLinks-main": {
       "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 2,
@@ -287,7 +274,6 @@
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
-
     "NoteLinks-main-done": {
       "regex": "(?:^|\\h)(x\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 1,
@@ -304,7 +290,6 @@
       "font": "noteplanstate",
       "color": "#C5487A"
     },
-
     "field": {
       "COMMENT": "Simplified form of YAML field identification",
       "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
@@ -317,7 +302,6 @@
       "color": "#8B82C9",
       "isMarkdownCharacter": true
     },
-
     "attribute": {
       "regex": "^([^:]{3,})(::)",
       "matchPosition": 1,
@@ -333,7 +317,6 @@
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
-
     "highlighted": {
       "__regex": "(==)([^\\s].+?)(==)",
       "__matchPosition": 2,
