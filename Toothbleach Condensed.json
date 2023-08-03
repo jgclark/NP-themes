@@ -41,6 +41,7 @@
 		"todo",
 		"checked",
 		"checked-canceled",
+		"checked-canceled-text",
 		"checked-scheduled",
 		"quote-mark",
 		"tabbed",
@@ -377,26 +378,29 @@
 		},
 		"checked": {
 			"color": "#A0098308",
-			"__color": "#97B863",
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"checked-canceled": {
-			"regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
-			"matchPosition": 0,
+			"COMMENT": "Covers whole line, colouring it",
+			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
 			"color": "#A0E04F57",
-			"_color": "#E04F57",
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
+		"checked-canceled-text": {
+			"COMMENT": "Strikes out just the text",
+			"regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
+			"matchPosition": 3,
+			"color": "#A0E04F57",
 			"strikethroughStyle": 1,
-			"headIndent": 33,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"checked-scheduled": {
-			"regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
+			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
 			"matchPosition": 0,
 			"color": "#A07B7C86",
-			"_color": "#7B7C86",
-			"headIndent": 33,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
