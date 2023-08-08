@@ -40,7 +40,6 @@
     "todo",
     "checked",
     "checked-canceled",
-    "checked-canceled-text",
     "checked-scheduled",
     "quote-mark",
     "tabbed",
@@ -171,27 +170,25 @@
     "underline-right-tilde": {
       "color": "#88B74746"
     },
-    "working-on": {
-      "backgroundColor": "#12006600",
-      "paragraphSpacing": 4
-    },
-    "todo": {
+    "checked-todo-characters": {
       "font": "noteplanstate",
-      "color": "#B74746",
-      "_color": "#CC6666",
-      "headIndent": 33,
-      "size": 16,
+      "headIndent": 36,
+      "_size": 16,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
-    "checked-todo-characters": {
+    "todo": {
+      "COMMENT": "Covers todos and bullets",
       "font": "noteplanstate",
-      "headIndent": 33,
-      "size": 16
+      "color": "#B74746",
+      "headIndent": 36,
+      "_size": 16,
+      "lineSpacing": 0.90,
+      "paragraphSpacing": 4
     },
     "checked": {
       "color": "#D0098308",
-      "_color": "#9DC777",
+      "headIndent": 36,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
@@ -199,6 +196,7 @@
       "COMMENT": "Covers whole line, colouring it",
       "regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
       "color": "#A0E04F57",
+      "headIndent": 36,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
@@ -215,11 +213,11 @@
       "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
       "matchPosition": 0,
       "color": "#A07B7C86",
-      "strikethroughStyle": 1,
+      "headIndent": 36,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
-    "__special-char": {
+    "special-char": {
       "COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
       "__font": "Menlo-Regular",
       "font": "AvenirNext-Regular"
@@ -227,13 +225,12 @@
     "quote-mark": {
       "color": "#354432",
       "font": "noteplanstate",
-      "headIndent": 33,
-      "size": 16
+      "headIndent": 36
     },
     "quote-content": {
       "color": "#c5c5c0",
       "type": "italic",
-      "headIndent": 33,
+      "headIndent": 36,
       "lineSpacing": 0.90,
       "paragraphSpacing": 4,
       "paragraphSpacingBefore": 0
@@ -246,12 +243,10 @@
     "schedule-from-date-link": {},
     "note-title-link": {},
     "hashtag": {
-      "_color": "#E7C1C2",
       "color": "#96CBFE",
       "type": ""
     },
     "attag": {
-      "_color": "#E7C1C2",
       "color": "#96CBFE",
       "type": ""
     },
@@ -369,24 +364,35 @@
       "isRevealOnCursorRange": true
     },
     "deadline": {
-      "regex": "\\h+!(\\d{4}-\\d{2}-\\d{2})\\h*",
+      "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
-      "color": "#AA45A2E5"
+      "color": "#C53119"
+    },
+    "working-on": {
+      "backgroundColor": "#88006600",
+      "lineSpacing": 0.90,
+      "paragraphSpacing": 4
     },
     "flagged-1": {
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
       "__matchPosition": 2,
-      "backgroundColor": "#A0718A"
+      "backgroundColor": "#A0718A",
+      "lineSpacing": 0.90,
+      "paragraphSpacing": 4
     },
     "flagged-2": {
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
       "__matchPosition": 2,
-      "backgroundColor": "#A0516A"
+      "backgroundColor": "#A0516A",
+      "lineSpacing": 0.90,
+      "paragraphSpacing": 4
     },
     "flagged-3": {
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
       "__matchPosition": 2,
-      "backgroundColor": "#A0314A"
+      "backgroundColor": "#A0314A",
+      "lineSpacing": 0.90,
+      "paragraphSpacing": 4
     },
     "starred": {
       "regex": "(^|\\v)(.*⭐️.*)($|\\v)",

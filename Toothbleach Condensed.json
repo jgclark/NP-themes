@@ -67,7 +67,7 @@
 		},
 		"tabbed": {
 			"COMMENT": "for anything indented",
-			"headIndent": 43,
+			"headIndent": 36,
 			"lineSpacing": 0.8,
 			"paragraphSpacing": 8,
 			"paragraphSpacingBefore": 0
@@ -179,20 +179,6 @@
 		"underline-right-tilde": {
 			"color": "#88885555"
 		},
-		"working-on": {
-			"backgroundColor": "#12006600",
-			"paragraphSpacing": 4
-		},
-		"checked-todo-characters": {
-			"font": "noteplanstate",
-			"headIndent": 33,
-			"size": 16
-		},
-		"special-char": {
-			"COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
-			"__font": "Menlo-Regular",
-			"font": "AvenirNext-Regular"
-		},
 		"JGC-MD-PATH-TITLE": {
 			"COMMENT": "See if it's possible to do something rather than the built-in",
 			"_regex": "\\[(.+?\\)]\\(([^\\s]*?)\\)",
@@ -209,13 +195,12 @@
 		"quote-mark": {
 			"color": "#35443250",
 			"font": "noteplanstate",
-			"headIndent": 33,
-			"size": 16
+			"headIndent": 36
 		},
 		"quote-content": {
 			"color": "#434343",
 			"type": "italic",
-			"headIndent": 33,
+			"headIndent": 36,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4,
 			"paragraphSpacingBefore": 0
@@ -368,16 +353,25 @@
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true
 		},
+		"checked-todo-characters": {
+			"font": "noteplanstate",
+			"headIndent": 36,
+			"_size": 16,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
 		"todo": {
+			"COMMENT": "Covers todos and bullets",
 			"font": "noteplanstate",
 			"color": "#CC6666",
-			"headIndent": 33,
+			"headIndent": 36,
 			"size": 16,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"checked": {
 			"color": "#A0098308",
+			"headIndent": 36,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
@@ -385,6 +379,7 @@
 			"COMMENT": "Covers whole line, colouring it",
 			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
 			"color": "#A0E04F57",
+			"headIndent": 36,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
@@ -401,30 +396,44 @@
 			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
 			"matchPosition": 0,
 			"color": "#A07B7C86",
+			"headIndent": 36,
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
+		"special-char": {
+			"COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
+			"__font": "Menlo-Regular",
+			"font": "AvenirNext-Regular"
+		},
 		"deadline": {
-			"regex": "\\h+!(\\d{4}-\\d{2}-\\d{2})\\h*",
+			"regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
 			"matchPosition": 1,
-			"color": "#AA45A2E5"
+			"color": "#C53119"
+		},
+		"working-on": {
+			"backgroundColor": "#22006600",
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
 		},
 		"flagged-1": {
 			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
 			"__matchPosition": 2,
 			"backgroundColor": "#FFE5E5",
+			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"flagged-2": {
 			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
 			"__matchPosition": 2,
 			"backgroundColor": "#FFC5C5",
+			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"flagged-3": {
 			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
 			"__matchPosition": 2,
 			"backgroundColor": "#FFA5A5",
+			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"starred": {
