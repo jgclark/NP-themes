@@ -535,10 +535,54 @@
 			"isMarkdownCharacter": true,
 			"color": "#AA888888"
 		},
+        "inline-comment-mark": {
+            "regex": "(\\s|^)(%%)(\\s|$)",
+            "matchPosition": 2,
+            "isMarkdownCharacter": true,
+            "color": "#88818475"
+        },
+        "inline-comment": {
+            "regex": "(%)(%([^%]+%?)+%)(%)",
+            "matchPosition": 2,
+            "isRevealOnCursorRange": true,
+            "isHiddenWithoutCursor": true,
+            "color": "#888888"
+        },
 		"unfinished": {
 			"regex": "\\?\\?\\?",
 			"color": "#FFFFFF",
 			"backgroundColor": "#FF2020"
+		},
+		"Timeblock-HideTag" : {
+			"color" : "#8FBCBB",
+			"isRevealOnCursorRange" : true,
+			"isHiddenWithoutCursor" : true,
+			"matchPosition" : 0,
+			"type" : "nolink",
+			"regex" : "\\s#🕑"
+		},
+		"arrow-link": {
+			"regex": ">((\\S[^<]*(?=<))|[\\S]+)",
+			"matchPosition": 1,
+			"urlPosition": 1,
+			"backgroundColor": "#10000000",
+			"isRevealOnCursorRange": true,
+			"type": "noteLink",
+			"prefix": "noteplan://x-callback-url/openNote?noteTitle="
+		  },
+		"arrow-left-delimiter": {
+			"regex": "(>)(\\S[^<]*)(<)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true,
+		},
+		"arrow-right-delimiter": {
+			"regex": "(>)(\\S[^<]*)(<)",
+			"matchPosition": 3,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true,
 		}
 	}
 }
