@@ -17,6 +17,8 @@ We can now have ==some highlighting== etc.
 * ! do
 * !! something
 * !!! very important
+* something important with bang ! in the middle
+* something important with bang at end !!
 * >> working on something
 * [>] ! Important Todo in the future >2021-08-04
 * [>] Scheduled into the future >2031-03-02
