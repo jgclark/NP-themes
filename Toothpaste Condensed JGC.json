@@ -1,10 +1,11 @@
 {
-  "name": "Toothpaste Condensed",
+  "name": "Toothpaste Condensed JGC",
   "COMMENT": "This is updated for new theming features in NP 3.9.4. It will not work fully on earlier versions of NP.",
   "style": "Dark",
   "author": {
     "name": "Jonathan Clark"
   },
+  "comment": "we appear to be able to use #AARRGGBB most of the time",
   "editor": {
     "backgroundColor": "#1D1E1F",
     "altBackgroundColor": "#2E2F30",
@@ -45,6 +46,7 @@
     "tabbed",
     "NoteLinks-main",
     "link",
+    "Timeblock-Hide-Tag",
     "hashtag",
     "attag",
     "schedule-to-date-link",
@@ -72,16 +74,13 @@
     },
     "title1": {
       "color": "#B74746",
-      "_color": "#CC6666",
       "size": 24,
-      "paragraphSpacing": 3,
       "font": "AvenirNext-Bold"
     },
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
       "matchPosition": 1,
       "color": "#B74746",
-      "_color": "#CC6666",
       "size": 22,
       "font": "AvenirNext-Bold"
     },
@@ -102,35 +101,34 @@
     },
     "title-mark1": {
       "color": "#66DAE3E8",
-      "size": 28,
+      "font": "AvenirNext-DemiBold",
+      "size": 22,
       "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2,
-      "font": "AvenirNext-DemiBold"
+      "paragraphSpacing": 2
     },
     "title-mark2": {
       "color": "#66E9C062",
-      "size": 24,
       "font": "AvenirNext-DemiBold",
+      "size": 18,
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 2
     },
     "title-mark3": {
       "color": "#66E9C062",
-      "size": 20,
+      "size": 17,
       "font": "AvenirNext-DemiBold",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 1
     },
     "title-mark4": {
       "color": "#66E9C062",
-      "size": 16,
+      "size": 15,
       "font": "AvenirNext-DemiBold",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 1
     },
     "bold": {
       "color": "#C75756",
-      "_color": "#CC6666",
       "font": "AvenirNextCondensed-Bold"
     },
     "bold-left-mark": {
@@ -151,7 +149,6 @@
     },
     "boldItalic": {
       "color": "#C75756",
-      "_color": "#CC6666",
       "font": "AvenirNextCondensed-BoldItalic"
     },
     "boldItalic-left-mark": {
@@ -235,19 +232,29 @@
       "paragraphSpacing": 4,
       "paragraphSpacingBefore": 0
     },
-    "link": {},
-    "schedule-to-date-link": {},
-    "done-date": {
-      "color": "#656560"
+    "link": {
+      "color": "#C88E6B"
     },
-    "schedule-from-date-link": {},
-    "note-title-link": {},
+    "schedule-to-date-link": {
+      "color": "#E8AE9B"
+    },
+    "done-date": {
+      "color": "#656565"
+    },
+    "schedule-from-date-link": {
+      "color": "#E8AE9B"
+    },
+    "note-title-link": {
+      "color": "#97B853"
+    },
     "hashtag": {
       "color": "#96CBFE",
+      "backgroundColor": "#10553311",
       "type": ""
     },
     "attag": {
       "color": "#96CBFE",
+      "backgroundColor": "#10553311",
       "type": ""
     },
     "phonenumber": {
@@ -319,45 +326,33 @@
       "paragraphSpacing": 4
     },
     "highlighted": {
-      "__regex": "(==)([^\\s].+?)(==)",
-      "__matchPosition": 2,
       "backgroundColor": "#66D2D21B",
       "order": 35,
       "isRevealOnCursorRange": true
     },
     "highlighted-left-marker": {
-      "__regex": "(==)([^\\s].+?)(==)",
-      "__matchPosition": 1,
       "color": "#AA45A2E5",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
     "highlighted-right-marker": {
-      "__regex": "(==)([^\\s].+?)(==)",
-      "__matchPosition": 3,
       "color": "#AA45A2E5",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
     "strikethrough": {
-      "__regex": "(~~)([^~]+)(~~)",
-      "__matchPosition": 2,
       "strikethroughStyle": 2,
       "isRevealOnCursorRange": true
     },
     "strikethrough-left-tilde": {
-      "__regex": "(~~)([^~]+)(~~)",
-      "__matchPosition": 1,
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "color": "#d9d9d9",
       "isRevealOnCursorRange": true
     },
     "strikethrough-right-tilde": {
-      "__regex": "(~~)([^~]+)(~~)",
-      "__matchPosition": 3,
       "isMarkdownCharacter": true,
       "color": "#d9d9d9",
       "isHiddenWithoutCursor": true,
@@ -366,6 +361,7 @@
     "deadline": {
       "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
+      "font": "AvenirNextCondensed-Bold",
       "color": "#C53119"
     },
     "working-on": {
@@ -402,6 +398,7 @@
     "code": {
       "font": "Menlo-Regular",
       "color": "#96CBFE",
+      "backgroundColor": "#20F4F4FB",
       "size": 14
     },
     "code-left-backtick": {
@@ -471,7 +468,7 @@
       "isRevealOnCursorRange": true
     },
     "timeblocks": {
-      "regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s((at|from)\\s+([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|(([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|NOON|noon|MIDNIGHT|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm))))|(([0-2]?\\d|NOON|noon|MIDNIGHT|midnight):[0-5]\\d\\s*(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|NOON|noon|MIDNIGHT|midnight):[0-5]\\d)?)(?=\\s|$)",
+      "regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
       "matchPosition": 1,
       "color": "#CC4999"
     },
@@ -496,6 +493,29 @@
       "regex": "\\?\\?\\?",
       "color": "#000000",
       "backgroundColor": "#FF2020"
+    },
+    "arrow-link": {
+      "regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
+      "matchPosition": 1,
+      "urlPosition": 1,
+      "backgroundColor": "#10FFFFFF",
+      "isRevealOnCursorRange": true,
+      "type": "noteLink",
+      "prefix": "noteplan://x-callback-url/openNote?noteTitle="
+    },
+    "arrow-left-delimiter": {
+      "regex": "(>)(\\S[^<]*)(<)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+    },
+    "arrow-right-delimiter": {
+      "regex": "(>)(\\S[^<]*)(<)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
     }
   }
 }
