@@ -1,11 +1,11 @@
 {
-	"name": "Toothbleach Condensed",
+	"name": "Toothbleach Condensed JGC",
 	"COMMENT": "This is updated for new theming features in NP 3.9.4. It will not work fully on earlier versions of NP.",
 	"style": "Light",
 	"author": {
 		"name": "Jonathan Clark"
 	},
-	"comment": "appear to be able to use #AARRGGBB most of the time",
+	"comment": "we appear to be able to use #AARRGGBB most of the time",
 	"editor": {
 		"backgroundColor": "#FAFAFA",
 		"altBackgroundColor": "#F0F0F0",
@@ -47,6 +47,7 @@
 		"tabbed",
 		"NoteLinks-main",
 		"link",
+		"Timeblock-Hide-Tag",
 		"hashtag",
 		"attag",
 		"schedule-to-date-link",
@@ -67,7 +68,7 @@
 		},
 		"tabbed": {
 			"COMMENT": "for anything indented",
-			"headIndent": 36,
+			"headIndent": 43,
 			"lineSpacing": 0.8,
 			"paragraphSpacing": 8,
 			"paragraphSpacingBefore": 0
@@ -138,7 +139,6 @@
 		},
 		"bold": {
 			"color": "#885555",
-			"color-old": "#996666",
 			"font": "AvenirNextCondensed-Bold"
 		},
 		"bold-left-mark": {
@@ -149,7 +149,6 @@
 		},
 		"italic": {
 			"color": "#885555",
-			"color-old": "#774444",
 			"font": "AvenirNextCondensed-Italic"
 		},
 		"italic-left-mark": {
@@ -160,7 +159,6 @@
 		},
 		"boldItalic": {
 			"color": "#885555",
-			"color-old": "#996666",
 			"font": "AvenirNextCondensed-BoldItalic"
 		},
 		"boldItalic-left-mark": {
@@ -170,7 +168,7 @@
 			"color": "#88885555"
 		},
 		"underline": {
-			"underlineStyle": 2,
+			"underlineStyle": 1,
 			"underlineColor": "#885555"
 		},
 		"underline-left-tilde": {
@@ -179,18 +177,57 @@
 		"underline-right-tilde": {
 			"color": "#88885555"
 		},
-		"JGC-MD-PATH-TITLE": {
-			"COMMENT": "See if it's possible to do something rather than the built-in",
-			"_regex": "\\[(.+?\\)]\\(([^\\s]*?)\\)",
-			"_matchPosition": 1,
-			"backgroundColor": "#22E36868"
+		"checked-todo-characters": {
+			"font": "noteplanstate",
+			"headIndent": 36,
+			"_size": 16,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
 		},
-		"JGC-MD-PATH-URL": {
-			"COMMENT": "See if it's possible to do something rather than the built-in",
-			"_regex": "\\[(.+?\\)]\\(([^\\s]*?)\\)",
-			"_matchPosition": 2,
-			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true
+		"todo": {
+			"COMMENT": "Covers todos and bullets",
+			"font": "noteplanstate",
+			"color": "#CC6666",
+			"headIndent": 36,
+			"_size": 16,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
+		"checked": {
+			"color": "#A0098308",
+			"headIndent": 36,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
+		"checked-canceled": {
+			"COMMENT": "Covers whole line, colouring it",
+			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
+			"color": "#A0E04F57",
+			"headIndent": 36,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
+		"checked-canceled-text": {
+			"COMMENT": "Strikes out just the text",
+			"regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
+			"matchPosition": 3,
+			"color": "#A0E04F57",
+			"strikethroughStyle": 1,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
+		"checked-scheduled": {
+			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
+			"matchPosition": 0,
+			"color": "#A07B7C86",
+			"headIndent": 36,
+			"lineSpacing": 0.90,
+			"paragraphSpacing": 4
+		},
+		"special-char": {
+			"COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
+			"__font": "Menlo-Regular",
+			"font": "AvenirNext-Regular"
 		},
 		"quote-mark": {
 			"color": "#35443250",
@@ -296,7 +333,7 @@
 		},
 		"NoteLinks-main": {
 			"regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
-			"matchPosition": 2,
+			"matchPosition": 8,
 			"color": "#C5487A"
 		},
 		"NoteLinks-left-brackets": {
@@ -353,61 +390,10 @@
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true
 		},
-		"checked-todo-characters": {
-			"font": "noteplanstate",
-			"headIndent": 36,
-			"_size": 16,
-			"lineSpacing": 0.90,
-			"paragraphSpacing": 4
-		},
-		"todo": {
-			"COMMENT": "Covers todos and bullets",
-			"font": "noteplanstate",
-			"color": "#CC6666",
-			"headIndent": 36,
-			"size": 16,
-			"lineSpacing": 0.90,
-			"paragraphSpacing": 4
-		},
-		"checked": {
-			"color": "#A0098308",
-			"headIndent": 36,
-			"lineSpacing": 0.90,
-			"paragraphSpacing": 4
-		},
-		"checked-canceled": {
-			"COMMENT": "Covers whole line, colouring it",
-			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
-			"color": "#A0E04F57",
-			"headIndent": 36,
-			"lineSpacing": 0.90,
-			"paragraphSpacing": 4
-		},
-		"checked-canceled-text": {
-			"COMMENT": "Strikes out just the text",
-			"regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
-			"matchPosition": 3,
-			"color": "#A0E04F57",
-			"strikethroughStyle": 1,
-			"lineSpacing": 0.90,
-			"paragraphSpacing": 4
-		},
-		"checked-scheduled": {
-			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
-			"matchPosition": 0,
-			"color": "#A07B7C86",
-			"headIndent": 36,
-			"lineSpacing": 0.90,
-			"paragraphSpacing": 4
-		},
-		"special-char": {
-			"COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
-			"__font": "Menlo-Regular",
-			"font": "AvenirNext-Regular"
-		},
 		"deadline": {
 			"regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
 			"matchPosition": 1,
+			"font": "AvenirNextCondensed-Bold",
 			"color": "#C53119"
 		},
 		"working-on": {
@@ -506,6 +492,11 @@
 			"color": "#6584A2",
 			"font": "AvenirNext-Italic"
 		},
+		"unfinished": {
+			"regex": "\\?\\?\\?",
+			"color": "#FFFFFF",
+			"backgroundColor": "#FF2020"
+		},
 		"eventID": {
 			"regex": "(event:[A-F0-9-]{36,37})",
 			"matchPosition": 1,
@@ -518,58 +509,60 @@
 			"matchPosition": 1,
 			"color": "#CC4999"
 		},
-		"line-comment-hide": {
+		"Timeblock-Hide-Tag": {
+			"comment": "FIXME:",
+			"regex": "\\s#🕑",
+			"matchPosition": 0,
+			"backgroundColor": "#FAFAFA",
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"type": "nolink"
+		},
+		"end-of-line-comment-hide": {
 			"regex": "(.*)( // )(.*)",
 			"matchPosition": 3,
 			"isHiddenWithoutCursor": true,
-			"color": "#AA888888"
+			"color": "#BB222E33"
 		},
-		"line-comment-show": {
+		"end-of-line-comment-show": {
 			"regex": "(.* // .*)",
 			"matchPosition": 1,
 			"isRevealOnCursorRange": true
 		},
-		"line-comment-slash": {
+		"end-of-line-comment-mark": {
 			"regex": "(.*)( // )",
 			"matchPosition": 2,
 			"isMarkdownCharacter": true,
-			"color": "#AA888888"
+			"color": "#99818475"
 		},
-        "inline-comment-mark": {
-            "regex": "(\\s|^)(%%)(\\s|$)",
-            "matchPosition": 2,
-            "isMarkdownCharacter": true,
-            "color": "#88818475"
-        },
-        "inline-comment": {
-            "regex": "(%)(%([^%]+%?)+%)(%)",
-            "matchPosition": 2,
-            "isRevealOnCursorRange": true,
-            "isHiddenWithoutCursor": true,
-            "color": "#888888"
-        },
-		"unfinished": {
-			"regex": "\\?\\?\\?",
-			"color": "#FFFFFF",
-			"backgroundColor": "#FF2020"
+		"inline-comment": {
+			"regex": "(%)(%([^%]+%?)+%)(%)",
+			"matchPosition": 2,
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"color": "#BB222E33"
 		},
-		"Timeblock-HideTag" : {
-			"color" : "#8FBCBB",
-			"isRevealOnCursorRange" : true,
-			"isHiddenWithoutCursor" : true,
-			"matchPosition" : 0,
-			"type" : "nolink",
-			"regex" : "\\s#🕑"
+		"inline-comment-mark-start": {
+			"regex": "[\\s^](%%)[^\\s]",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"color": "#99818475"
+		},
+		"inline-comment-mark-end": {
+			"regex": "\\b(%%)[\\W^]",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"color": "#99818475"
 		},
 		"arrow-link": {
-			"regex": ">((\\S[^<]*(?=<))|[\\S]+)",
+			"regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
 			"matchPosition": 1,
 			"urlPosition": 1,
 			"backgroundColor": "#10000000",
 			"isRevealOnCursorRange": true,
 			"type": "noteLink",
 			"prefix": "noteplan://x-callback-url/openNote?noteTitle="
-		  },
+		},
 		"arrow-left-delimiter": {
 			"regex": "(>)(\\S[^<]*)(<)",
 			"matchPosition": 1,
