@@ -15,6 +15,7 @@ They feature:
 - `~underlining~`
 - `field: keyword` colouring at the start of a line (particularly for frontmatter)
 - hiding of `[[...]]` markers surrounding note links
+- hiding of `[...](↗︎)` markers surrounding URLs (but keep the ↗︎)
 - `>Note Title<` for Arrow Links: a way to create links to a note by title, like `[[note link]]`, but without the back-reference showing in that page's References section. Especially useful for pages you link to many times (e.g. from a daily note template).
 - `attribute::` colouring at the start of a line
 - `// hidden comments` at the end of a line

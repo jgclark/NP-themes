@@ -249,17 +249,18 @@
     },
     "hashtag": {
       "color": "#96CBFE",
-      "backgroundColor": "#10553311",
+      "backgroundColor": "#20553311",
       "type": ""
     },
     "attag": {
-      "color": "#96CBFE",
-      "backgroundColor": "#10553311",
+      "color": "#90C0E0",
+      "backgroundColor": "#20553311",
       "type": ""
     },
     "phonenumber": {
       "color": "#769EB3"
     },
+
     "NoteLinks-main": {
       "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 2,
@@ -298,6 +299,36 @@
       "font": "noteplanstate",
       "color": "#C5487A"
     },
+
+    "URL-links-left-square-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 1,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+    },
+    "URL-links-right-square-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 3,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+    },
+    "URL-links-left-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 4,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+    },
+    "URL-links-right-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 6,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+    },
+
     "field": {
       "COMMENT": "Simplified form of YAML field identification",
       "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
@@ -398,7 +429,7 @@
     "code": {
       "font": "Menlo-Regular",
       "color": "#96CBFE",
-      "backgroundColor": "#20F4F4FB",
+      "backgroundColor": "#322",
       "size": 14
     },
     "code-left-backtick": {
@@ -472,22 +503,50 @@
       "matchPosition": 1,
       "color": "#CC4999"
     },
-    "line-comment-hide": {
+    "Timeblock-Hide-Tag": {
+      "comment": "FIXME:",
+      "regex": "\\s#🕑",
+      "matchPosition": 0,
+      "backgroundColor": "#1D1E1F",
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "type": "nolink"
+    },
+    "end-of-line-comment-hide": {
       "regex": "(.*)( // )(.*)",
       "matchPosition": 3,
       "isHiddenWithoutCursor": true,
-      "color": "#AA888888"
+      "color": "#AAE5E5EC"
     },
-    "line-comment-show": {
+    "end-of-line-comment-show": {
       "regex": "(.* // .*)",
       "matchPosition": 1,
       "isRevealOnCursorRange": true
     },
-    "line-comment-slash": {
+    "end-of-line-comment-mark": {
       "regex": "(.*)( // )",
       "matchPosition": 2,
       "isMarkdownCharacter": true,
       "color": "#AA888888"
+    },
+    "inline-comment": {
+      "regex": "(%)(%([^%]+%?)+%)(%)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#AAE5E5EC"
+    },
+    "inline-comment-mark-start": {
+      "regex": "[\\s^](%%)[^\\s]",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "color": "#88818475"
+    },
+    "inline-comment-mark-end": {
+      "regex": "\\b(%%)[\\W^]",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "color": "#88818475"
     },
     "unfinished": {
       "regex": "\\?\\?\\?",
