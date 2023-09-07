@@ -270,18 +270,22 @@
 		"hashtag": {
 			"color": "#5A64A2",
 			"backgroundColor": "#10335511",
+			"borderRadius": 5,
+			"rightBorderPadding": -1,
 			"type": ""
 		},
 		"attag": {
 			"color": "#5A64A2",
 			"backgroundColor": "#10553311",
+			"borderRadius": 5,
+			"rightBorderPadding": -1,
 			"type": ""
 		},
 		"phonenumber": {
 			"color": "#769EB3"
 		},
 		"field-key": {
-			"COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name",
+			"COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
 			"regex": "^([^:\\+\\*]{3,26}:)\\h+(.*)$",
 			"matchPosition": 1,
 			"color": "#5A64A2",
@@ -368,34 +372,34 @@
 			"font": "noteplanstate",
 			"color": "#C5487A"
 		},
-"URL-links-left-square-bracket": {
-	"isRevealOnCursorRange": true,
-	"isHiddenWithoutCursor": true,
-	"isMarkdownCharacter": true,
-	"matchPosition": 1,
-	"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-},
-"URL-links-right-square-bracket": {
-	"isRevealOnCursorRange": true,
-	"isHiddenWithoutCursor": true,
-	"isMarkdownCharacter": true,
-	"matchPosition": 3,
-	"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-},
-"URL-links-left-bracket": {
-	"isRevealOnCursorRange": true,
-	"isHiddenWithoutCursor": true,
-	"isMarkdownCharacter": true,
-	"matchPosition": 4,
-	"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-},
-"URL-links-right-bracket": {
-	"isRevealOnCursorRange": true,
-	"isHiddenWithoutCursor": true,
-	"isMarkdownCharacter": true,
-	"matchPosition": 6,
-	"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-},
+		"URL-links-left-square-bracket": {
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"isMarkdownCharacter": true,
+			"matchPosition": 1,
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+		},
+		"URL-links-right-square-bracket": {
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"isMarkdownCharacter": true,
+			"matchPosition": 3,
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+		},
+		"URL-links-left-bracket": {
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"isMarkdownCharacter": true,
+			"matchPosition": 4,
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+		},
+		"URL-links-right-bracket": {
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"isMarkdownCharacter": true,
+			"matchPosition": 6,
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+		},
 		"strikethrough": {
 			"__regex": "(~~)([^~]+)(~~)",
 			"__matchPosition": 2,
@@ -418,7 +422,6 @@
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true
 		},
-
 		"deadline": {
 			"regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
 			"matchPosition": 1,
@@ -500,34 +503,36 @@
 		"Templates_tags-opener": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
 			"matchPosition": 1,
-			"color": "#6584A2",
-			"font": "Menlo-Regular"
+			"color": "#3B3AB290",
+			"font": "Menlo-Regular",
+			"size": 15
 		},
 		"Templates_tags": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
 			"matchPosition": 2,
 			"color": "#3B3AB2",
-			"font": "Menlo-Regular"
+			"font": "Menlo-Regular",
+			"size": 15
 		},
 		"Templates_tags-closer": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
 			"matchPosition": 3,
-			"color": "#6584A2",
-			"font": "Menlo-Regular"
+			"color": "#3B3AB290",
+			"font": "Menlo-Regular",
+			"size": 15
 		},
 		"Templates_tags-commented-out": {
 			"regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
 			"matchPosition": 1,
 			"color": "#6584A2",
-			"font": "AvenirNext-Italic"
+			"font": "AvenirNext-Italic",
+			"size": 15
 		},
-
 		"unfinished": {
 			"regex": "\\?\\?\\?",
 			"color": "#FFFFFF",
 			"backgroundColor": "#FF2020"
 		},
-
 		"eventID": {
 			"regex": "(event:[A-F0-9-]{36,37})",
 			"matchPosition": 1,
@@ -585,7 +590,6 @@
 			"isMarkdownCharacter": true,
 			"color": "#99818475"
 		},
-
 		"arrow-link": {
 			"regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
 			"matchPosition": 1,
@@ -600,14 +604,14 @@
 			"matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true
+			"isRevealOnCursorRange": true,
 		},
 		"arrow-right-delimiter": {
 			"regex": "(>)(\\S[^<]*)(<)",
 			"matchPosition": 3,
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true
+			"isRevealOnCursorRange": true,
 		}
 	}
 }
