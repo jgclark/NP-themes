@@ -604,14 +604,29 @@
 			"matchPosition": 1,
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true,
+			"isRevealOnCursorRange": true
 		},
 		"arrow-right-delimiter": {
 			"regex": "(>)(\\S[^<]*)(<)",
 			"matchPosition": 3,
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true
+		},
+		"verse-indicator": {
+			"regex": "(§)(.*)",
+			"matchPosition": 1,
+			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true,
+			"isMarkdownCharacter": true,
+			"color": "#99818475"
+		},
+		"verse-text": {
+			"regex": "(¶)(.*)",
+			"matchPosition": 2,
+			"color": "#F04060",
+			"backgroundColor": "#f0f0f0",
+			"borderRadius": 4
 		}
 	}
 }

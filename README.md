@@ -25,6 +25,7 @@ They feature:
 - times that define time blocks are coloured
 - a `#🕑` tag is hidden. (For people using /AutoTimeBlocking with the default settings, this hides the tag "#🕑" which /atb includes on lines it creates.)
 - a `???` string is coloured bright red. This can be used to indicate something unfinished.
+- all the text after a ¶ symbol on a line is coloured red. (This is a 'Pilcrow' mark, which can be typed on macs by Alt-7.)
 
 ![Toothbleach Condensed](toothbleach-condensed-JGC.png)
 

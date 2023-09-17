@@ -445,7 +445,7 @@
         "font": "Menlo-Regular",
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
-        "size": 14,
+        "size": 14
       },
       "corner-radius": 7,
       "fence-open": {
@@ -571,14 +571,29 @@
       "matchPosition": 1,
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true,
+      "isRevealOnCursorRange": true
     },
     "arrow-right-delimiter": {
       "regex": "(>)(\\S[^<]*)(<)",
       "matchPosition": 3,
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "verse-indicator": {
+      "regex": "(§)(.*)",
+      "matchPosition": 1,
+      "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true,
+      "isMarkdownCharacter": true,
+      "color": "#99818475"
+    },
+    "verse-text": {
+      "regex": "(¶)(.*)",
+      "matchPosition": 2,
+      "color": "#F04060",
+      "backgroundColor": "#2E2F30",
+      "borderRadius": 4
     }
   }
 }
