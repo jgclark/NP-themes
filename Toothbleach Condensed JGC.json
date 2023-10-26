@@ -286,7 +286,7 @@
 		},
 		"field-key": {
 			"COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
-			"regex": "^([^:\\+\\*]{3,26}:)\\h+(.*)$",
+			"regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
 			"matchPosition": 1,
 			"color": "#5A64A2",
 			"lineSpacing": 0.8,
@@ -294,12 +294,13 @@
 			"paragraphSpacingBefore": 0
 		},
 		"field-value": {
-			"regex": "^([^:\\+\\*]{3,26}:)\\h+(.*)$",
-			"matchPosition": 2,
-			"color": "#BB5A64A2",
-			"lineSpacing": 0.8,
-			"paragraphSpacing": 0,
-			"paragraphSpacingBefore": 0
+			"COMMENT": "now turned off",
+			"_regex": "^([^:\\+\\*]{3,26}:)\\h+(.*)$",
+			"_matchPosition": 2,
+			"_color": "#BB5A64A2",
+			"_lineSpacing": 0.8,
+			"_paragraphSpacing": 0,
+			"_paragraphSpacingBefore": 0
 		},
 		"attribute": {
 			"regex": "^([^:]{3,})(::)",
@@ -372,33 +373,34 @@
 			"font": "noteplanstate",
 			"color": "#C5487A"
 		},
-		"URL-links-left-square-bracket": {
+		"URL-link": {
+			"regex": "\\[.*?\\]\\(.*?\\)",
 			"isRevealOnCursorRange": true,
-			"isHiddenWithoutCursor": true,
-			"isMarkdownCharacter": true,
+			"comment": "Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time."
+		},
+		"URL-link-left-square-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
 			"matchPosition": 1,
-			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-		},
-		"URL-links-right-square-bracket": {
-			"isRevealOnCursorRange": true,
 			"isHiddenWithoutCursor": true,
-			"isMarkdownCharacter": true,
+			"isMarkdownCharacter": true
+		},
+		"URL-link-right-square-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
 			"matchPosition": 3,
-			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-		},
-		"URL-links-left-bracket": {
-			"isRevealOnCursorRange": true,
 			"isHiddenWithoutCursor": true,
-			"isMarkdownCharacter": true,
+			"isMarkdownCharacter": true
+		},
+		"URL-link-left-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
 			"matchPosition": 4,
-			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
-		},
-		"URL-links-right-bracket": {
-			"isRevealOnCursorRange": true,
 			"isHiddenWithoutCursor": true,
-			"isMarkdownCharacter": true,
+			"isMarkdownCharacter": true
+		},
+		"URL-link-right-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
 			"matchPosition": 6,
-			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+			"isHiddenWithoutCursor": true,
+			"isMarkdownCharacter": true
 		},
 		"strikethrough": {
 			"__regex": "(~~)([^~]+)(~~)",

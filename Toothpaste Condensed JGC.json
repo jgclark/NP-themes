@@ -302,45 +302,40 @@
       "font": "noteplanstate",
       "color": "#C5487A"
     },
+    "URL-link": {
+      "COMMENT": "Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time.",
+      "regex": "\\[.*?\\]\\(.*?\\)",
+      "isRevealOnCursorRange": true
+    },
     "URL-links-left-square-bracket": {
-      "isRevealOnCursorRange": true,
-      "isHiddenWithoutCursor": true,
-      "isMarkdownCharacter": true,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 1,
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
     },
     "URL-links-right-square-bracket": {
-      "isRevealOnCursorRange": true,
-      "isHiddenWithoutCursor": true,
-      "isMarkdownCharacter": true,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 3,
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
     },
     "URL-links-left-bracket": {
-      "isRevealOnCursorRange": true,
-      "isHiddenWithoutCursor": true,
-      "isMarkdownCharacter": true,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 4,
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
     },
     "URL-links-right-bracket": {
-      "isRevealOnCursorRange": true,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true,
-      "matchPosition": 6,
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))"
+      "matchPosition": 6
     },
     "field": {
-      "COMMENT": "Simplified form of YAML field identification",
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
+      "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
+      "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
       "matchPosition": 1,
       "color": "#96CBFE"
-    },
-    "field-right-colons": {
-      "regex": "^(\\h*\\-?\\h*)([^:\\+\\*]{3,26})(:)(?=\\h+[\\w\\d@!#]+)",
-      "matchPosition": 2,
-      "color": "#8B82C9",
-      "isMarkdownCharacter": true
     },
     "attribute": {
       "regex": "^([^:]{3,})(::)",
