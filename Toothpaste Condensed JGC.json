@@ -303,39 +303,47 @@
       "color": "#C5487A"
     },
     "URL-link": {
-      "COMMENT": "Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time.",
-      "regex": "\\[.*?\\]\\(.*?\\)",
-      "isRevealOnCursorRange": true
+      "regex": "\\[[^]]*?\\]\\(.*?\\)",
+      "isRevealOnCursorRange": true,
+      "comment": "Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time."
     },
-    "URL-links-left-square-bracket": {
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+    "URL-link-left-square-bracket": {
+      "COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
+      "regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 1,
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true
     },
-    "URL-links-right-square-bracket": {
+    "URL-link-right-square-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 3,
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true
     },
-    "URL-links-left-bracket": {
+    "URL-link-left-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 4,
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true
     },
-    "URL-links-right-bracket": {
+    "URL-link-right-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 6,
       "isHiddenWithoutCursor": true,
-      "isMarkdownCharacter": true,
-      "matchPosition": 6
+      "isMarkdownCharacter": true
     },
-    "field": {
+    "field-key": {
       "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
       "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
       "matchPosition": 1,
       "color": "#96CBFE"
+    },
+    "field-value": {
+      "COMMENT": "now turned off",
+      "_regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
+      "_matchPosition": 2,
+      "_color": "#8B82C9",
+      "_isMarkdownCharacter": true
     },
     "attribute": {
       "regex": "^([^:]{3,})(::)",
@@ -465,7 +473,7 @@
     "Templates_tags-opener": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 1,
-      "color": "#96CBFE90",
+      "color": "#BB96CBFE",
       "font": "Menlo-Regular",
       "size": 15
     },
@@ -479,15 +487,15 @@
     "Templates_tags-closer": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 3,
-      "color": "#96CBFE90",
+      "color": "#BB96CBFE",
       "font": "Menlo-Regular",
       "size": 15
     },
     "Templates_tags-commented-out": {
       "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
       "matchPosition": 1,
-      "color": "#6584A2",
-      "font": "AvenirNext-Italic",
+      "color": "#7796CBFE",
+      "font": "Menlo-Regular",
       "size": 15
     },
     "eventID": {
@@ -495,7 +503,7 @@
       "matchPosition": 1,
       "color": "#444444",
       "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true
+      "isRevealOnCursorRange": false
     },
     "timeblocks": {
       "regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",

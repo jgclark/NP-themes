@@ -374,12 +374,13 @@
 			"color": "#C5487A"
 		},
 		"URL-link": {
-			"regex": "\\[.*?\\]\\(.*?\\)",
+			"regex": "\\[[^]]*?\\]\\(.*?\\)",
 			"isRevealOnCursorRange": true,
 			"comment": "Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time."
 		},
 		"URL-link-left-square-bracket": {
-			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+			"COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
+			"regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
 			"matchPosition": 1,
 			"isHiddenWithoutCursor": true,
 			"isMarkdownCharacter": true
@@ -505,7 +506,7 @@
 		"Templates_tags-opener": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
 			"matchPosition": 1,
-			"color": "#3B3AB290",
+			"color": "#BB3B3AB2",
 			"font": "Menlo-Regular",
 			"size": 15
 		},
@@ -519,15 +520,15 @@
 		"Templates_tags-closer": {
 			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
 			"matchPosition": 3,
-			"color": "#3B3AB290",
+			"color": "#BB3B3AB2",
 			"font": "Menlo-Regular",
 			"size": 15
 		},
 		"Templates_tags-commented-out": {
 			"regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
 			"matchPosition": 1,
-			"color": "#6584A2",
-			"font": "AvenirNext-Italic",
+			"color": "#773B3AB2",
+			"font": "Menlo-Regular",
 			"size": 15
 		},
 		"unfinished": {
@@ -540,7 +541,7 @@
 			"matchPosition": 1,
 			"color": "#CCA949",
 			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true
+			"isRevealOnCursorRange": false
 		},
 		"timeblocks": {
 			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
