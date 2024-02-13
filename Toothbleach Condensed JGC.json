@@ -84,58 +84,56 @@
 		},
 		"title1": {
 			"color": "#C5487A",
+			"font": "AvenirNext-Bold",
 			"size": 24,
-			"font": "AvenirNext-Bold"
+			"paragraphSpacingBefore": 18,
+			"paragraphSpacing": 2
 		},
 		"title-in-frontmatter": {
 			"regex": "^[tT]itle:\\s+(.*)",
 			"matchPosition": 1,
 			"color": "#C5487A",
-			"size": 22,
-			"font": "AvenirNext-Bold"
+			"font": "AvenirNext-Bold",
+			"size": 22
 		},
 		"title2": {
 			"color": "#AB5699",
+			"font": "AvenirNext-DemiBold",
 			"size": 22,
-			"font": "AvenirNext-DemiBold"
+			"paragraphSpacingBefore": 18,
+			"paragraphSpacing": 2
 		},
 		"title3": {
 			"color": "#7B72B9",
+			"font": "AvenirNext-DemiBold",
 			"size": 20,
-			"font": "AvenirNext-DemiBold"
+			"paragraphSpacingBefore": 14,
+			"paragraphSpacing": 1
 		},
 		"title4": {
 			"color": "#8B82C9",
-			"size": 18,
-			"font": "AvenirNext-DemiBold"
+			"font": "AvenirNext-DemiBold",
+			"size": 18
 		},
 		"title-mark1": {
 			"color": "#66DAE3E8",
 			"font": "AvenirNext-DemiBold",
 			"size": 22,
-			"paragraphSpacingBefore": 18,
-			"paragraphSpacing": 2
 		},
 		"title-mark2": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 18,
-			"paragraphSpacingBefore": 18,
-			"paragraphSpacing": 2
+			"size": 18
 		},
 		"title-mark3": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 17,
-			"paragraphSpacingBefore": 14,
-			"paragraphSpacing": 1
+			"size": 17
 		},
 		"title-mark4": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 15,
-			"paragraphSpacingBefore": 14,
-			"paragraphSpacing": 1
+			"size": 15
 		},
 		"bold": {
 			"color": "#885555",
@@ -269,15 +267,17 @@
 		},
 		"hashtag": {
 			"color": "#5A64A2",
-			"backgroundColor": "#10335511",
-			"borderRadius": 5,
+			"backgroundColor": "#10335522",
+			"borderRadius": 4,
+			"leftBorderPadding": -1,
 			"rightBorderPadding": -1,
 			"type": ""
 		},
 		"attag": {
 			"color": "#5A64A2",
-			"backgroundColor": "#10553311",
-			"borderRadius": 5,
+			"backgroundColor": "#10553322",
+			"borderRadius": 4,
+			"leftBorderPadding": -1,
 			"rightBorderPadding": -1,
 			"type": ""
 		},
@@ -312,29 +312,6 @@
 			"color": "#5A64A2",
 			"matchPosition": 2,
 			"isMarkdownCharacter": true
-		},
-		"highlighted": {
-			"__regex": "(==)([^\\s].+?)(==)",
-			"backgroundColor": "#55D2D21B",
-			"order": 35,
-			"__matchPosition": 2,
-			"isRevealOnCursorRange": true
-		},
-		"highlighted-left-marker": {
-			"__regex": "(==)([^\\s].+?)(==)",
-			"color": "#AA45A2E5",
-			"isMarkdownCharacter": true,
-			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true,
-			"__matchPosition": 1
-		},
-		"highlighted-right-marker": {
-			"__regex": "(==)([^\\s].+?)(==)",
-			"color": "#AA45A2E5",
-			"isMarkdownCharacter": true,
-			"isHiddenWithoutCursor": true,
-			"isRevealOnCursorRange": true,
-			"__matchPosition": 3
 		},
 		"NoteLinks-main": {
 			"regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
@@ -478,12 +455,13 @@
 			"theme": "github",
 			"body": {
 				"font": "Menlo-Regular",
+				"lineSpacing": 0.8,
 				"paragraphSpacingBefore": 0,
 				"paragraphSpacing": 0,
 				"size": 14,
 				"_backgroundColor": "#e9f9e9"
 			},
-			"corner-radius": 8,
+			"corner-radius": 6,
 			"fence-open": {
 				"color": "#6584A2"
 			},
@@ -493,7 +471,8 @@
 			"language-specifier": {
 				"font": "Menlo-Italic",
 				"color": "#afafaf",
-				"size": 14,
+				"size": 12,
+				"paragraphSpacingBefore": 0,
 				"paragraphSpacing": 0
 			}
 		},
@@ -543,9 +522,7 @@
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": false
 		},
-		"timeblocks": {
-			"regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
-			"matchPosition": 1,
+		"timeBlockColor": {
 			"color": "#CC4999"
 		},
 		"Timeblock-Hide-Tag": {

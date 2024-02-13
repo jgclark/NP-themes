@@ -64,9 +64,10 @@
     "title1": {
       "color": "#B74746",
       "_color": "#CC6666",
+      "font": "AvenirNext-Bold",
       "size": 24,
-      "paragraphSpacing": 3,
-      "font": "AvenirNext-Bold"
+      "paragraphSpacingBefore": 18,
+      "paragraphSpacing": 2
     },
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
@@ -78,46 +79,44 @@
     },
     "title2": {
       "color": "#C99056",
-      "size": 22,
-      "font": "AvenirNext-DemiBold"
-    },
-    "title3": {
-      "color": "#E9C062",
-      "size": 20,
-      "font": "AvenirNext-DemiBold"
-    },
-    "title4": {
-      "color": "#E9C062",
-      "size": 18,
-      "font": "AvenirNext-DemiBold"
-    },
-    "title-mark1": {
-      "color": "#66DAE3E8",
-      "size": 28,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2,
-      "font": "AvenirNext-DemiBold"
-    },
-    "title-mark2": {
-      "color": "#66E9C062",
-      "size": 24,
       "font": "AvenirNext-DemiBold",
+      "size": 22,
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 2
     },
-    "title-mark3": {
-      "color": "#66E9C062",
-      "size": 20,
+    "title3": {
+      "color": "#E9C062",
       "font": "AvenirNext-DemiBold",
+      "size": 20,
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 1
     },
-    "title-mark4": {
-      "color": "#66E9C062",
-      "size": 16,
+    "title4": {
+      "color": "#E9C062",
       "font": "AvenirNext-DemiBold",
+      "size": 18,
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 1
+    },
+    "title-mark1": {
+      "color": "#66DAE3E8",
+      "font": "AvenirNext-DemiBold",
+      "size": 28
+    },
+    "title-mark2": {
+      "color": "#66E9C062",
+      "font": "AvenirNext-DemiBold",
+      "size": 24
+    },
+    "title-mark3": {
+      "color": "#66E9C062",
+      "font": "AvenirNext-DemiBold",
+      "size": 20
+    },
+    "title-mark4": {
+      "color": "#66E9C062",
+      "font": "AvenirNext-DemiBold",
+      "size": 16
     },
     "bold": {
       "color": "#B74746",
@@ -202,7 +201,6 @@
     "tabbed": {
       "headIndent": 43
     },
-
     "quote-mark": {
       "color": "#354432",
       "font": "noteplanstate",
@@ -217,7 +215,6 @@
       "paragraphSpacing": 4,
       "paragraphSpacingBefore": 0
     },
-
     "link": {},
     "schedule-to-date-link": {},
     "done-date": {

@@ -15,7 +15,7 @@
     "textColor": "#DAE3E8",
     "toolbarIconColor": "#c5c5c0",
     "menuItemColor": "#c5c5c0",
-    "timeBlockColor": "#E9C062",
+    "timeBlockColor": "#998022",
     "shouldOverwriteFont": false
   },
   "__orderedStyles": [
@@ -74,58 +74,58 @@
     },
     "title1": {
       "color": "#B74746",
+      "font": "AvenirNext-Bold",
       "size": 24,
-      "font": "AvenirNext-Bold"
+      "paragraphSpacingBefore": 18,
+      "paragraphSpacing": 2
     },
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
       "matchPosition": 1,
       "color": "#B74746",
-      "size": 22,
-      "font": "AvenirNext-Bold"
+      "font": "AvenirNext-Bold",
+      "size": 22
     },
     "title2": {
       "color": "#C99056",
+      "font": "AvenirNext-DemiBold",
       "size": 22,
-      "font": "AvenirNext-DemiBold"
+      "paragraphSpacingBefore": 18,
+      "paragraphSpacing": 2
     },
     "title3": {
       "color": "#E9C062",
+      "font": "AvenirNext-DemiBold",
       "size": 20,
-      "font": "AvenirNext-DemiBold"
+      "paragraphSpacingBefore": 14,
+      "paragraphSpacing": 1
     },
     "title4": {
       "color": "#E9C062",
+      "font": "AvenirNext-DemiBold",
       "size": 18,
-      "font": "AvenirNext-DemiBold"
+      "paragraphSpacingBefore": 14,
+      "paragraphSpacing": 1
     },
     "title-mark1": {
       "color": "#66DAE3E8",
       "font": "AvenirNext-DemiBold",
-      "size": 22,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2
+      "size": 22
     },
     "title-mark2": {
       "color": "#66E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 18,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2
+      "size": 18
     },
     "title-mark3": {
       "color": "#66E9C062",
-      "size": 17,
       "font": "AvenirNext-DemiBold",
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 1
+      "size": 17
     },
     "title-mark4": {
       "color": "#66E9C062",
-      "size": 15,
       "font": "AvenirNext-DemiBold",
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 1
+      "size": 15
     },
     "bold": {
       "color": "#C75756",
@@ -249,15 +249,17 @@
     },
     "hashtag": {
       "color": "#96CBFE",
-      "backgroundColor": "#20553311",
-      "borderRadius": 5,
+      "backgroundColor": "#20553322",
+      "borderRadius": 4,
+      "leftBorderPadding": -1,
       "rightBorderPadding": -1,
       "type": ""
     },
     "attag": {
       "color": "#90C0E0",
-      "backgroundColor": "#20553311",
-      "borderRadius": 5,
+      "backgroundColor": "#20553322",
+      "borderRadius": 4,
+      "leftBorderPadding": -1,
       "rightBorderPadding": -1,
       "type": ""
     },
@@ -505,9 +507,7 @@
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": false
     },
-    "timeblocks": {
-      "regex": "(?:^\\s*(?:\\*(?!\\s+\\[[\\-\\>]\\])\\s+|\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
-      "matchPosition": 1,
+    "timeBlockColor": {
       "color": "#CC4999"
     },
     "Timeblock-Hide-Tag": {
