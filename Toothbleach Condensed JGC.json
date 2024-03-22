@@ -423,21 +423,21 @@
 		"flagged-2": {
 			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
 			"__matchPosition": 2,
-			"backgroundColor": "#FFC5C5",
+			"backgroundColor": "#FFD5D5",
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"flagged-3": {
 			"__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
 			"__matchPosition": 2,
-			"backgroundColor": "#FFA5A5",
+			"backgroundColor": "#FFC5C5",
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"starred": {
 			"regex": "(^|\\v)(.*⭐️.*)($|\\v)",
 			"matchPosition": 2,
-			"backgroundColor": "#FFE5E5"
+			"backgroundColor": "#FFD5D5"
 		},
 		"code": {
 			"font": "Menlo-Regular",

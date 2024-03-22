@@ -409,21 +409,24 @@
     "flagged-1": {
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
       "__matchPosition": 2,
-      "backgroundColor": "#A0718A",
+      "_backgroundColor": "#A0718A",
+      "backgroundColor": "#552E2F",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-2": {
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
       "__matchPosition": 2,
-      "backgroundColor": "#A0516A",
+      "_backgroundColor": "#A0516A",
+      "backgroundColor": "#773E3F",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-3": {
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
       "__matchPosition": 2,
-      "backgroundColor": "#A0314A",
+      "_backgroundColor": "#A0314A",
+      "backgroundColor": "#A04E4F",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
