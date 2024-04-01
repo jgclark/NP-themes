@@ -15,7 +15,7 @@
 		"textColor": "#222E33",
 		"toolbarIconColor": "#222E33",
 		"menuItemColor": "#222E33",
-		"timeBlockColor": "#E9C062",
+		"timeBlockColor": "#769EB3",
 		"shouldOverwriteFont": false
 	},
 	"orderedStyles": [
@@ -521,9 +521,6 @@
 			"color": "#CCA949",
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": false
-		},
-		"timeBlockColor": {
-			"color": "#CC4999"
 		},
 		"Timeblock-Hide-Tag": {
 			"comment": "FIXME:",
