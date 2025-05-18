@@ -3,8 +3,6 @@
 [NotePlan app](https://noteplan.co/) has fairly extensive [theming capabilities](https://help.noteplan.co/article/44-customize-themes). Here are the two pairs of Themes that I use and maintain for you to use, study or pilfer as you feel like.
 
 ## Toothbleach Condensed JGC / Toothpaste Condensed JGC
-*This pair of themes have been updated to use new theming features in NotePlan v3.9.4.*
-
 *They had been called 'Tooth... Condensed', but then versions of this were incorporated into the main app, and so I've had to change the name to stop ambiguity for further development of these custom themes.*
 
 They feature:
@@ -32,7 +30,7 @@ They feature:
 This pair are particularly useful when working on small screens. They are the same as the above, but use the "Avenir Next Condensed" font (which might or might not be installed on your system). If you have a different preferred condensed font, then you can change to that by editing the theme file as described in the link above.
 
 ## Toothbleach JGC / Toothpaste JGC
-*This pair of themes have **not** yet been updated to use new theming features in NotePlan v3.9.4. This is so there is something to use for people on earlier versions.*
+They are the same as the 'Condensed' pair above, except that they use the regular "Avenir Next" font, not the condensed version.
 
 Toothpaste sample:
 
