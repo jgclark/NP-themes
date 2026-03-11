@@ -41,6 +41,7 @@
     "todo",
     "checked",
     "checked-canceled",
+    "checked-canceled-text",
     "checked-scheduled",
     "quote-mark",
     "tabbed",
@@ -55,30 +56,30 @@
     "title1",
     "title2",
     "title3",
+    "callback-button",
+    "URL-link",
     "note-title-link"
   ],
   "styles": {
     "body": {
       "color": "#E5E5EC",
       "font": "AvenirNextCondensed-Regular",
+      "size": 17,
       "lineSpacing": 0.8,
       "paragraphSpacingBefore": 0,
-      "paragraphSpacing": 8,
-      "size": 18
+      "paragraphSpacing": 4
     },
     "tabbed": {
       "COMMENT": "for anything indented",
       "headIndent": 43,
       "lineSpacing": 0.8,
       "paragraphSpacingBefore": 0,
-      "paragraphSpacing": 8
+      "paragraphSpacing": 2
     },
     "title1": {
       "color": "#B74746",
       "font": "AvenirNext-Bold",
-      "size": 24,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2
+      "size": 24
     },
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
@@ -90,43 +91,45 @@
     "title2": {
       "color": "#C99056",
       "font": "AvenirNext-DemiBold",
-      "size": 22,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 1
+      "size": 22
     },
     "title3": {
       "color": "#E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 20,
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 0
+      "size": 20
     },
     "title4": {
       "color": "#E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 18,
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 0
+      "size": 18
     },
     "title-mark1": {
       "color": "#66DAE3E8",
       "font": "AvenirNext-DemiBold",
-      "size": 22
+      "size": 22,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
     },
     "title-mark2": {
       "color": "#66E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 18
+      "size": 18,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
     },
     "title-mark3": {
       "color": "#66E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 17
+      "size": 17,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
     },
     "title-mark4": {
       "color": "#66E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 15
+      "size": 15,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
     },
     "bold": {
       "color": "#C75756",
@@ -159,7 +162,7 @@
       "color": "#99C75756"
     },
     "underline": {
-      "underlineStyle": 2,
+      "underlineStyle": 1,
       "underlineColor": "#B74746"
     },
     "underline-left-tilde": {
@@ -216,7 +219,6 @@
     },
     "special-char": {
       "COMMENT": "Applies to * and -; deliberately using AvenirNext-Regular not AvenirNextCondensed-Regular otherwise **too** thin!",
-      "__font": "Menlo-Regular",
       "font": "AvenirNext-Regular"
     },
     "quote-mark": {
@@ -228,9 +230,9 @@
       "color": "#c5c5c0",
       "type": "italic",
       "headIndent": 36,
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4,
-      "paragraphSpacingBefore": 0
+      "lineSpacing": 0.8,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 8
     },
     "link": {
       "color": "#C88E6B"
@@ -303,6 +305,16 @@
       "isRevealOnCursorRange": true,
       "font": "noteplanstate",
       "color": "#C5487A"
+    },
+    "callback-button": {
+      "comment": "FIXME:Not working. Just for pseudo-buttons.",
+      "regex": "\\[[^]]*?\\]\\(noteplan://.*\\)",
+      "backgroundColor": "#D23B44",
+      "color": "#FFFF00",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3
     },
     "URL-link": {
       "regex": "\\[[^]]*?\\]\\(.*?\\)",
@@ -380,31 +392,22 @@
       "color": "#C53119"
     },
     "working-on": {
-      "backgroundColor": "#88006600",
+      "backgroundColor": "#66006600",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-1": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
-      "__matchPosition": 2,
-      "_backgroundColor": "#A0718A",
-      "backgroundColor": "#552E2F",
+      "backgroundColor": "#4A2425",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-2": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
-      "__matchPosition": 2,
-      "_backgroundColor": "#A0516A",
-      "backgroundColor": "#773E3F",
+      "backgroundColor": "#5C2C30",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-3": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
-      "__matchPosition": 2,
-      "_backgroundColor": "#A0314A",
-      "backgroundColor": "#A04E4F",
+      "backgroundColor": "#773E3F",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
@@ -470,7 +473,7 @@
       "size": 15
     },
     "Templates_tags-commented-out": {
-      "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
+      "regex": "(<%#\\-?\\s+.*?\\s+[\\-]?%>)",
       "matchPosition": 1,
       "color": "#7796CBFE",
       "font": "Menlo-Regular",

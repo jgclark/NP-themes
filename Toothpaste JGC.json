@@ -1,6 +1,5 @@
 {
-  "name": "Toothpaste",
-  "COMMENT": "This is NOT updated for new theming features in NP 3.9.4 yet, so there's a version that can work with earlier versions.",
+  "name": "Toothpaste JGC",
   "style": "Dark",
   "author": {
     "name": "Jonathan Clark"
@@ -57,23 +56,51 @@
     "body": {
       "color": "#DAE3E8",
       "font": "AvenirNext-Regular",
+      "size": 16,
       "lineSpacing": 0.8,
-      "paragraphSpacing": 8,
-      "paragraphSpacingBefore": 0
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
     },
     "tabbed": {
       "COMMENT": "for anything indented",
       "headIndent": 43,
       "lineSpacing": 0.8,
-      "paragraphSpacing": 8,
-      "paragraphSpacingBefore": 0
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+
+    "title-mark1": {
+      "color": "#66DAE3E8",
+      "font": "AvenirNext-DemiBold",
+      "size": 22,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 6
+    },
+    "title-mark2": {
+      "color": "#66E9C062",
+      "font": "AvenirNext-DemiBold",
+      "size": 18,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "title-mark3": {
+      "color": "#66E9C062",
+      "font": "AvenirNext-DemiBold",
+      "size": 17,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "title-mark4": {
+      "color": "#66E9C062",
+      "font": "AvenirNext-DemiBold",
+      "size": 15,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
     },
     "title1": {
       "color": "#B74746",
       "font": "AvenirNext-Bold",
-      "size": 24,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2
+      "size": 24
     },
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
@@ -85,44 +112,19 @@
     "title2": {
       "color": "#C99056",
       "font": "AvenirNext-DemiBold",
-      "size": 22,
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 2
+      "size": 22
     },
     "title3": {
       "color": "#E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 20,
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 1
+      "size": 20
     },
     "title4": {
       "color": "#E9C062",
       "font": "AvenirNext-DemiBold",
-      "size": 18,
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 1
-    },
-    "title-mark1": {
-      "color": "#66DAE3E8",
-      "font": "AvenirNext-DemiBold",
-      "size": 22
-    },
-    "title-mark2": {
-      "color": "#66E9C062",
-      "font": "AvenirNext-DemiBold",
       "size": 18
     },
-    "title-mark3": {
-      "color": "#66E9C062",
-      "font": "AvenirNext-DemiBold",
-      "size": 17
-    },
-    "title-mark4": {
-      "color": "#66E9C062",
-      "font": "AvenirNext-DemiBold",
-      "size": 15
-    },
+
     "bold": {
       "color": "#B74746",
       "font": "AvenirNext-Bold"
@@ -154,7 +156,7 @@
       "color": "#99CC6666"
     },
     "underline": {
-      "underlineStyle": 2,
+      "underlineStyle": 1,
       "underlineColor": "#B74746"
     },
     "underline-left-tilde": {
@@ -226,16 +228,18 @@
       "color": "#c5c5c0",
       "type": "italic",
       "headIndent": 36,
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4,
-      "paragraphSpacingBefore": 0
+      "lineSpacing": 0.80,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 8
     },
-"link": {
-  "color": "#C88E6B"
-},
-"schedule-to-date-link": {
-  "color": "#E8AE9B"
-},
+
+    "link": {
+      "color": "#C88E6B"
+    },
+    "schedule-to-date-link": {
+      "color": "#E8AE9B"
+    },
+
     "done-date": {
       "color": "#656560"
     },
@@ -332,34 +336,14 @@
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true
     },
+
     "field-key": {
       "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
       "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
       "matchPosition": 1,
       "color": "#96CBFE"
     },
-    "field-value": {
-      "COMMENT": "now turned off",
-      "_regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
-      "_matchPosition": 2,
-      "_color": "#8B82C9",
-      "_isMarkdownCharacter": true
-    },
-    "attribute": {
-      "regex": "^([^:]{3,})(::)",
-      "matchPosition": 1,
-      "color": "#96CBFE",
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4
-    },
-    "attribute-right-colons": {
-      "regex": "^([^:]{3,})(::)",
-      "matchPosition": 2,
-      "color": "#8B82C9",
-      "isMarkdownCharacter": true,
-      "lineSpacing": 0.90,
-      "paragraphSpacing": 4
-    },
+
     "highlighted": {
       "backgroundColor": "#66D2D21B",
       "order": 35,
@@ -377,6 +361,7 @@
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
+
     "strikethrough": {
       "strikethroughStyle": 2,
       "isRevealOnCursorRange": true
@@ -400,31 +385,22 @@
       "color": "#C53119"
     },
     "working-on": {
-      "backgroundColor": "#88006600",
+      "backgroundColor": "#66006600",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-1": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
-      "__matchPosition": 2,
-      "_backgroundColor": "#A0718A",
-      "backgroundColor": "#552E2F",
+      "backgroundColor": "#4A2425",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-2": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
-      "__matchPosition": 2,
-      "_backgroundColor": "#A0516A",
-      "backgroundColor": "#773E3F",
+      "backgroundColor": "#5C2C30",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },
     "flagged-3": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
-      "__matchPosition": 2,
-      "_backgroundColor": "#A0314A",
-      "backgroundColor": "#A04E4F",
+      "backgroundColor": "#773E3F",
       "lineSpacing": 0.90,
       "paragraphSpacing": 4
     },

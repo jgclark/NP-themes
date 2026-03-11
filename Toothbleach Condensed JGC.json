@@ -56,6 +56,8 @@
 		"title1",
 		"title2",
 		"title3",
+		"callback-button",
+		"URL-link",
 		"note-title-link"
 	],
 	"styles": {
@@ -64,22 +66,20 @@
 			"font": "AvenirNextCondensed-Regular",
 			"lineSpacing": 0.8,
 			"paragraphSpacingBefore": 0,
-			"paragraphSpacing": 8,
+			"paragraphSpacing": 4,
 			"size": 18
 		},
 		"tabbed": {
-			"COMMENT": "for anything indented",
+			"COMMENT": "for anything indented. headIndent is for anything after first line.",
 			"headIndent": 43,
 			"lineSpacing": 0.8,
 			"paragraphSpacingBefore": 0,
-			"paragraphSpacing": 8
+			"paragraphSpacing": 2
 		},
 		"title1": {
 			"color": "#C5487A",
 			"font": "AvenirNext-Bold",
-			"size": 24,
-			"paragraphSpacingBefore": 18,
-			"paragraphSpacing": 2
+			"size": 24
 		},
 		"title-in-frontmatter": {
 			"regex": "^[tT]itle:\\s+(.*)",
@@ -91,43 +91,45 @@
 		"title2": {
 			"color": "#AB5699",
 			"font": "AvenirNext-DemiBold",
-			"size": 22,
-			"paragraphSpacingBefore": 18,
-			"paragraphSpacing": 0
+			"size": 22
 		},
 		"title3": {
 			"color": "#7B72B9",
 			"font": "AvenirNext-DemiBold",
-			"size": 20,
-			"paragraphSpacingBefore": 14,
-			"paragraphSpacing": 0
+			"size": 20
 		},
 		"title4": {
 			"color": "#8B82C9",
 			"font": "AvenirNext-DemiBold",
-			"size": 18,
-			"paragraphSpacingBefore": 14,
-			"paragraphSpacing": 0
+			"size": 18
 		},
 		"title-mark1": {
 			"color": "#66DAE3E8",
 			"font": "AvenirNext-DemiBold",
-			"size": 22
+			"size": 22,
+			"paragraphSpacingBefore": 0,
+			"paragraphSpacing": 4
 		},
 		"title-mark2": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 18
+			"size": 18,
+			"paragraphSpacingBefore": 0,
+			"paragraphSpacing": 4
 		},
 		"title-mark3": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 17
+			"size": 17,
+			"paragraphSpacingBefore": 0,
+			"paragraphSpacing": 4
 		},
 		"title-mark4": {
 			"color": "#66E9C062",
 			"font": "AvenirNext-DemiBold",
-			"size": 15
+			"size": 15,
+			"paragraphSpacingBefore": 0,
+			"paragraphSpacing": 4
 		},
 		"bold": {
 			"color": "#885555",
@@ -306,7 +308,7 @@
 		"NoteLinks-left-brackets": {
 			"regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 1,
-			"color": " #C5487A",
+			"color": "#C5487A",
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true
@@ -314,7 +316,7 @@
 		"NoteLinks-right-brackets": {
 			"regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
 			"matchPosition": 3,
-			"color": " #C5487A",
+			"color": "#C5487A",
 			"isMarkdownCharacter": true,
 			"isHiddenWithoutCursor": true,
 			"isRevealOnCursorRange": true
@@ -334,6 +336,35 @@
 			"isRevealOnCursorRange": true,
 			"font": "noteplanstate",
 			"color": "#C5487A"
+		},
+		"callback-button": {
+			"comment": "Just for pseudo-buttons. FIXME: Ideal version not working. So requires =b= markers around text.",
+			"__regex": "\\[[^]]*?\\]\\(noteplan://.*\\)",
+			"regex": "(=b=)(.*?)(=b=)",
+			"matchPosition": 2,
+			"backgroundColor": "#D2DBE4",
+			"borderRadius": 6,
+			"inlineBorder": true,
+			"leftBorderPadding": 3,
+			"rightBorderPadding": 3
+		},
+		"callback-button-left": {
+			"regex": "(=b=)(.*?)(=b=)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true,
+			"color": "#44CBCCC6",
+			"backgroundColor": "#E1F4FD"
+		},
+		"callback-button-right": {
+			"regex": "(=b=)(.*?)(=b=)",
+			"matchPosition": 3,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true,
+			"color": "#44CBCCC6",
+			"backgroundColor": "#E1F4FD"
 		},
 		"URL-link": {
 			"regex": "\\[[^]]*?\\]\\(.*?\\)",
@@ -393,12 +424,12 @@
 			"paragraphSpacing": 4
 		},
 		"flagged-1": {
-			"backgroundColor": "#FFE5E5",
+			"backgroundColor": "#FFEEEE",
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
 		"flagged-2": {
-			"backgroundColor": "#FFD5D5",
+			"backgroundColor": "#FFD9D9",
 			"lineSpacing": 0.90,
 			"paragraphSpacing": 4
 		},
@@ -471,10 +502,11 @@
 			"size": 15
 		},
 		"Templates_tags-commented-out": {
-			"regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
+			"regex": "(<%#\\-?\\s+.*?\\s+[\\-]?%>)",
 			"matchPosition": 1,
 			"color": "#773B3AB2",
 			"font": "Menlo-Regular",
+			"strikethroughStyle": 1,
 			"size": 15
 		},
 		"unfinished": {

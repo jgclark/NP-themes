@@ -1,0 +1,409 @@
+{
+  "name": "Claude.ai Dark JGC",
+  "style": "Dark",
+  "editor": {
+    "backgroundColor": "#1A1512",
+    "altBackgroundColor": "#252018",
+    "tintColor": "#E88B5C",
+    "tintColor2": "#CC6D3D",
+    "textColor": "#E8DFD6",
+    "toolbarBackgroundColor": "#252018",
+    "toolbarIconColor": "#BFA895",
+    "menuItemColor": "#BFA895",
+    "timeBlockColor": "#E88B5C",
+    "shouldOverwriteFont": false
+  },
+  "styles": {
+    "body": {
+      "font": ".AppleSystemUIFont",
+      "size": 16,
+      "_font": "EBGaramondRoman-Regular",
+      "_size": 18,
+      "lineSpacing": 0.9,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4,
+      "color": "#E8DFD6"
+    },
+    "tabbed": {
+      "headIndent": 36,
+      "paragraphSpacing": 4
+    },
+    "title-mark1": {
+      "color": "#45E8DFD6",
+      "size": 28,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 6
+    },
+    "title-mark2": {
+      "color": "#45E8DFD6",
+      "size": 24,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "title-mark3": {
+      "color": "#45E8DFD6",
+      "size": 20,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "title-mark4": {
+      "color": "#45E8DFD6",
+      "size": 18,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "title1": {
+      "font": "EBGaramondRoman-SemiBold",
+      "color": "#CFB298",
+      "_color": "#F5EDE4",
+      "size": 28
+    },
+    "title2": {
+      "font": "EBGaramondRoman-SemiBold",
+      "color": "#DEC9B7",
+      "_color": "#EFE6DD",
+      "size": 24
+    },
+    "title3": {
+      "font": "EBGaramondRoman-SemiBold",
+      "color": "#D6C0A8",
+      "_color": "#E8DFD6",
+      "size": 21
+    },
+    "title4": {
+      "font": "EBGaramondRoman-SemiBold",
+      "color": "#E8DFD6",
+      "size": 19,
+      "comment": "This is optically closer to 17pt body text.",
+      "underlineStyle": 1
+    },
+    "bold": {
+      "font": ".AppleSystemUIFontDemi"
+    },
+    "bold-left-mark": {
+      "color": "#45E8DFD6"
+    },
+    "bold-right-mark": {
+      "color": "#45E8DFD6"
+    },
+    "italic": {
+      "font": ".AppleSystemUIFontItalic"
+    },
+    "italic-left-mark": {
+      "color": "#45E8DFD6"
+    },
+    "italic-right-mark": {
+      "color": "#45E8DFD6"
+    },
+    "boldItalic": {
+      "font": ".AppleSystemUIFontDemiItalic"
+    },
+    "boldItalic-left-mark": {
+      "color": "#45E8DFD6"
+    },
+    "boldItalic-right-mark": {
+      "color": "#45E8DFD6"
+    },
+    "code": {
+      "font": "Menlo-Regular",
+      "color": "#E88B5C",
+      "size": 15
+    },
+    "code-left-backtick": {
+      "color": "#66E88B5C"
+    },
+    "code-right-backtick": {
+      "color": "#66E88B5C"
+    },
+
+    "working-on": {
+      "backgroundColor": "#408654",
+      "lineSpacing": 0.9,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "flagged-1": {
+      "backgroundColor": "#A06D3D1D",
+      "lineSpacing": 0.9,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "flagged-2": {
+      "backgroundColor": "#CC6D3D1D",
+      "lineSpacing": 0.9,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+    "flagged-3": {
+      "backgroundColor": "#FF6D3D1D",
+      "lineSpacing": 0.9,
+      "paragraphSpacingBefore": 0,
+      "paragraphSpacing": 4
+    },
+
+    "todo": {
+      "color": "#E88B5C",
+      "headIndent": 36,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "size": 16
+    },
+    "checked-todo-characters": {
+      "font": "noteplanstate",
+      "headIndent": 36,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "checked": {
+      "headIndent": 36,
+      "color": "#66E8DFD6",
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "checked-canceled": {
+      "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
+      "matchPosition": 0,
+      "color": "#888888",
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "strikethroughStyle": 1
+    },
+    "checked-scheduled": {
+      "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
+      "matchPosition": 0,
+      "color": "#888888",
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "quote-mark": {
+      "color": "#80E88B5C",
+      "headIndent": 33,
+      "size": 16
+    },
+    "quote-content": {
+      "color": "#C8BFB6",
+      "type": "italic",
+      "headIndent": 33
+    },
+    "done-date": {
+      "color": "#66E8DFD6",
+      "backgroundColor": "#1A1512",
+      "size": 14
+    },
+    "note-title-link": {
+      "color": "#66E8DFD6"
+    },
+
+    "hashtag": {
+      "backgroundColor": "#20E88B5C",
+      "type": ""
+    },
+    "attag": {
+      "backgroundColor": "#20CC6D3D",
+      "type": ""
+    },
+    "phonenumber": {
+      "color": "#897348"
+    },
+
+    "field-key": {
+      "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
+      "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
+      "matchPosition": 1,
+      "color": "#B9A378"
+    },
+    
+    "highlighted": {
+      "backgroundColor": "#A7A115"
+    },
+    "highlighted-left-marker": {
+      "color": "#40000000"
+    },
+    "highlighted-right-marker": {
+      "color": "#40000000"
+    },
+
+    "callback-button": {
+      "comment": "Just for pseudo-buttons. FIXME: Ideal version not working, despite lots of attemps. So requires =b= markers around text.",
+      "__regex": "\\[[^]]*?\\]\\(noteplan://.*\\)",
+      "regex": "(=b=)(.*?)(=b=)",
+      "matchPosition": 2,
+      "backgroundColor": "#50E88B5C",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3
+    },
+    "callback-button-left": {
+      "regex": "(=b=)(.*?)(=b=)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#44CBCCC6",
+      "backgroundColor": "#E1F4FD"
+    },
+    "callback-button-right": {
+      "regex": "(=b=)(.*?)(=b=)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#44CBCCC6",
+      "backgroundColor": "#E1F4FD"
+    },
+
+    "URL-link": {
+      "regex": "\\[[^]]*?\\]\\(.*?\\)",
+      "isRevealOnCursorRange": true,
+      "comment": "Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time."
+    },
+    "URL-link-left-square-bracket": {
+      "COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
+      "regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 1,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
+    },
+    "URL-link-right-square-bracket": {
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 3,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
+    },
+    "URL-link-left-bracket": {
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 4,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
+    },
+    "URL-link-right-bracket": {
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 6,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true
+    },
+
+    "strikethrough": {
+      "color": "#99A89784",
+      "strikethroughStyle": 2,
+      "strikethroughColor": "#DDA89784"
+    },
+    "strikethrough-left-tilde": {
+      "color": "#44A89784"
+    },
+    "strikethrough-right-tilde": {
+      "color": "#44A89784"
+    },
+
+    "underline": {
+      "underlineStyle": 1,
+      "underlineColor": "#E88B5C"
+    },
+    "underline-left-tilde": {
+      "color": "#44A89784"
+    },
+    "underline-right-tilde": {
+      "color": "#44A89784"
+    },
+
+    "#waiting": {
+      "regex": "^* (.*#waiting.*)$",
+      "matchPosition": 1,
+      "font": ".AppleSystemUIFontItalic"
+    },
+
+    "Templates_tags-opener": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 1,
+      "color": "#BB618e61",
+      "font": "Menlo-Regular",
+      "size": 15
+    },
+    "Templates_tags": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 2,
+      "color": "#618e61",
+      "font": "Menlo-Regular",
+      "size": 15
+    },
+    "Templates_tags-closer": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 3,
+      "color": "#BB618e61",
+      "font": "Menlo-Regular",
+      "size": 15
+    },
+    "Templates_tags-commented-out": {
+      "regex": "(<%#\\-?\\s+.*?\\s+[\\-]?%>)",
+      "matchPosition": 1,
+      "color": "#BB618e61",
+      "font": "Menlo-Regular",
+      "strikethroughStyle": 1,
+      "size": 15
+    },
+
+    "unfinished": {
+      "regex": "\\?\\?\\?",
+      "color": "#FFFFFF",
+      "backgroundColor": "#FF2020"
+    },
+
+    "end-of-line-comment-hide": {
+      "regex": "(.*)( // )(.*)",
+      "matchPosition": 3,
+      "isHiddenWithoutCursor": true,
+      "color": "#BB222E33"
+    },
+    "end-of-line-comment-show": {
+      "regex": "(.* // .*)",
+      "matchPosition": 1,
+      "isRevealOnCursorRange": true
+    },
+    "end-of-line-comment-mark": {
+      "regex": "(.*)( // )",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true,
+      "color": "#99818475"
+    },
+
+    "inline-comment": {
+      "regex": "(%)(%([^%]+%?)+%)(%)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#BB222E33"
+    },
+    "inline-comment-mark-start": {
+      "regex": "[\\s^](%%)[^\\s]",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "color": "#99818475"
+    },
+    "inline-comment-mark-end": {
+      "regex": "\\b(%%)[\\W^]",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "color": "#99818475"
+    },
+
+    "verse-indicator": {
+      "regex": "(§)(.*)",
+      "matchPosition": 1,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "isMarkdownCharacter": true,
+      "color": "#99818475"
+    },
+    "verse-text": {
+      "regex": "(¶)(.*)",
+      "matchPosition": 2,
+      "color": "#F04060",
+      "backgroundColor": "#f0f0f0",
+      "borderRadius": 4
+    }
+  },
+  "author": {
+    "name": "Jonathan Clark"
+  }
+}
