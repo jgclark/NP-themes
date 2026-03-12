@@ -1,6 +1,7 @@
 {
   "name": "Claude.ai Dark JGC",
   "style": "Dark",
+  "COMMENT": "This is based loosely on Eduard's Claude.ai theme, but with lots of additions and improvements.",
   "editor": {
     "backgroundColor": "#1A1512",
     "altBackgroundColor": "#252018",

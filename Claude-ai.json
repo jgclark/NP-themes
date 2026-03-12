@@ -1,6 +1,6 @@
 {
     "name": "Claude.ai JGC",
-    "COMMENT": "This is my own theme, based on Eduard's Claude.ai theme, but with some tweaks.",
+    "COMMENT": "This is based loosely on Eduard's Claude.ai theme, but with lots of additions and improvements.",
     "style": "Light",
     "author": {
         "name": "Jonathan Clark"
@@ -12,7 +12,8 @@
         "tintColor": "#cc7d5e",
         "tintColor2": "#E88B5C",
         "textColor":"#2C2416",
-        "toolbarBackgroundColor": "#E4D9CC",
+        "toolbarBackgroundColor": "#f0ede6",
+        "_toolbarBackgroundColor": "#E4D9CC",
         "toolbarIconColor": "#5F4D46",
         "menuItemColor": "#5F4D46",
 		"timeBlockColor": "#CC6D3D",
