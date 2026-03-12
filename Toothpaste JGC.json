@@ -16,7 +16,7 @@
     "timeBlockColor": "#E9C062",
     "shouldOverwriteFont": false
   },
-  "orderedStyles": [
+  "__orderedStyles": [
     "title-mark1",
     "title-mark2",
     "title-mark3",
@@ -305,6 +305,35 @@
       "isRevealOnCursorRange": true,
       "font": "noteplanstate",
       "color": "#C5487A"
+    },
+    "callback-button": {
+      "comment": "Just for pseudo-buttons. Note: Ideal version not working. So requires =b= markers around text, and the -left and -right items too.",
+      "regex__ideal": "\\[[^]]*?\\]\\(noteplan://.*\\)",
+      "regex": "(=b=)(.*?)(=b=)",
+      "matchPosition": 2,
+      "backgroundColor": "#66D23B44",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3
+    },
+    "callback-button-left": {
+      "regex": "(=b=)(.*?)(=b=)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CBCCC6",
+      "backgroundColor": "#44CBCCC6"
+    },
+    "callback-button-right": {
+      "regex": "(=b=)(.*?)(=b=)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CBCCC6",
+      "backgroundColor": "#44CBCCC6"
     },
     "URL-link": {
       "regex": "\\[[^]]*?\\]\\(.*?\\)",

@@ -6,6 +6,7 @@
 They all feature:
 - hiding of `[[...]]` markers surrounding note links
 - hiding of `[...](↗︎)` markers surrounding URLs (but keep the ↗︎)
+- 'callback buttons' that make a pseudo-button out of a NP x-callback markdown link (see below for details)
 - `>Note Title<` for Arrow Links: a way to create links to a note by title, like `[[note link]]`, but without the back-reference showing in that page's References section. Especially useful for pages you link to many times (e.g. from a daily note template).
 - `!` / `!!` / `!!!` priority markers with highlighting
 - `>>` working-on indicator (green highlight)
@@ -56,6 +57,14 @@ This pair are particularly useful when working on **small screens**. They are th
 They are the same as the 'Condensed' pair above, except that they use the regular width "Avenir Next" fonts. Here's a sample:
 
 ![Toothpaste JGC example](Toothpaste-sample.png)
+
+## Callback buttons
+These make pseudo-buttons out of NP x-callback calls in markdown links. For example: 
+```markdown
+=b=[▶️ Start day](noteplan://x-callback-url/runPlugin?pluginID=jgclark.DailyJournal&command=dayStart)=b=
+```
+becomes the first of these buttons:
+![Callback button examples](callback-buttons.png)
 
 ## Other notes
 You can also use my sample **[Theme test note](https://noteplan.co/n/D38E5E06-959F-4570-9253-C7142C76EF02)**, part of which is shown above.

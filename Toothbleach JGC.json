@@ -54,6 +54,8 @@
 		"title1",
 		"title2",
 		"title3",
+		"callback-button",
+		"URL-link",
 		"note-title-link"
 	],
 
@@ -363,6 +365,35 @@
 			"color": "#C5487A"
 		},
 
+		"callback-button": {
+			"comment": "Just for pseudo-buttons. Note: Ideal version not working. So requires =b= markers around text, and the -left and -right items too.",
+			"regex__ideal": "\\[[^]]*?\\]\\(noteplan://.*\\)",
+			"regex": "(=b=)(.*?)(=b=)",
+			"matchPosition": 2,
+			"backgroundColor": "#D7E1E9",
+			"borderRadius": 6,
+			"inlineBorder": true,
+			"leftBorderPadding": 3,
+			"rightBorderPadding": 3
+		},
+		"callback-button-left": {
+			"regex": "(=b=)(.*?)(=b=)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true,
+			"color": "#CBCCC6",
+			"backgroundColor": "#22CBCCC6"
+		},
+		"callback-button-right": {
+			"regex": "(=b=)(.*?)(=b=)",
+			"matchPosition": 3,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"isRevealOnCursorRange": true,
+			"color": "#CBCCC6",
+			"backgroundColor": "#22CBCCC6"
+		},
 		"URL-link": {
 			"regex": "\\[[^]]*?\\]\\(.*?\\)",
 			"isRevealOnCursorRange": true,

@@ -338,11 +338,11 @@
 			"color": "#C5487A"
 		},
 		"callback-button": {
-			"comment": "Just for pseudo-buttons. FIXME: Ideal version not working. So requires =b= markers around text.",
-			"__regex": "\\[[^]]*?\\]\\(noteplan://.*\\)",
+			"comment": "Just for pseudo-buttons. Note: Ideal version not working. So requires =b= markers around text, and the -left and -right items too.",
+			"regex__ideal": "\\[[^]]*?\\]\\(noteplan://.*\\)",
 			"regex": "(=b=)(.*?)(=b=)",
 			"matchPosition": 2,
-			"backgroundColor": "#D2DBE4",
+			"backgroundColor": "#D7E1E9",
 			"borderRadius": 6,
 			"inlineBorder": true,
 			"leftBorderPadding": 3,

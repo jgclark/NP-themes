@@ -240,8 +240,8 @@
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true,
-      "color": "#44CBCCC6",
-      "backgroundColor": "#E1F4FD"
+      "color": "#CBCCC6",
+      "backgroundColor": "#44CBCCC6"
     },
     "callback-button-right": {
       "regex": "(=b=)(.*?)(=b=)",
@@ -249,8 +249,8 @@
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true,
-      "color": "#44CBCCC6",
-      "backgroundColor": "#E1F4FD"
+      "color": "#CBCCC6",
+      "backgroundColor": "#44CBCCC6"
     },
 
     "URL-link": {
