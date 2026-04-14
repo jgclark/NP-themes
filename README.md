@@ -34,16 +34,16 @@ Claude JGC sample:
 
 ![Claude JGC example](Claude.ai-JGC-sample.png)
 
-The body font is the same as Claude uses for user input, which is Apple's built-in sans font. If you wish, you can change the body font to use EB Garamond as well. To do this change the "body" section lines from
+The body font uses the same font. If you would prefer to use the font for text input, then you can do this by switching to Apple's built-in 'sans' font. In the theme files, change the "body" section lines from
 
 ```json
-    "font": ".AppleSystemUIFont",
-    "size": 16,
+    "font": "EBGaramond-Regular",
+    "size": 18,
 ```
 to
 ```json
-    "font": "EBGaramondRoman-Regular",
-    "size": 18,
+    "font": ".AppleSystemUIFont",
+    "size": 16,
 ```
 
 ## Toothbleach Condensed JGC / Toothpaste Condensed JGC

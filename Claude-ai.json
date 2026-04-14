@@ -1,29 +1,29 @@
 {
     "name": "Claude.ai JGC",
-    "COMMENT": "This is based loosely on Eduard's Claude.ai theme, but with lots of additions and improvements.",
     "style": "Light",
+    "COMMENT": "This is an extended and improved version of the built-in Claude.ai theme.",
     "author": {
         "name": "Jonathan Clark"
     },
-    
     "editor": {
         "backgroundColor": "#faf9f5",
         "altBackgroundColor": "#f0ede6",
         "tintColor": "#cc7d5e",
         "tintColor2": "#E88B5C",
-        "textColor":"#2C2416",
+        "textColor": "#2C2416",
         "toolbarBackgroundColor": "#f0ede6",
         "_toolbarBackgroundColor": "#E4D9CC",
         "toolbarIconColor": "#5F4D46",
         "menuItemColor": "#5F4D46",
-		"timeBlockColor": "#CC6D3D",
+        "timeBlockColor": "#CC6D3D",
         "shouldOverwriteFont": false
     },
-    
     "styles": {
         "body": {
-            "font": ".AppleSystemUIFont",
-            "size": 16,
+            "_font": ".AppleSystemUIFont",
+            "_size": 16,
+            "font": "EBGaramond-Regular",
+            "size": 18,
             "lineSpacing": 0.9,
             "paragraphSpacingBefore": 0,
             "paragraphSpacing": 4,
@@ -34,7 +34,6 @@
             "headIndent": 36,
             "paragraphSpacing": 4
         },
-
         "title-mark1": {
             "color": "#452C2416",
             "size": 28,
@@ -59,14 +58,12 @@
             "paragraphSpacingBefore": 0,
             "paragraphSpacing": 4
         },
-        
         "title1": {
             "font": "EBGaramondRoman-SemiBold",
             "_color": "#141413",
             "color": "#A26803",
             "size": 28
         },
-        
         "title2": {
             "font": "EBGaramondRoman-SemiBold",
             "_color": "#604f3c",
@@ -77,7 +74,6 @@
             "_leftBorderPadding": 6,
             "size": 24
         },
-        
         "title3": {
             "font": "EBGaramondRoman-SemiBold",
             "color": "#895803",
@@ -87,67 +83,56 @@
             "_borderRadius": 8,
             "size": 21
         },
-		
         "title4": {
             "font": "EBGaramondRoman-SemiBold",
             "color": "#604f3c",
             "size": 19,
             "comment": "This is optically closer to 17pt body text.",
-            "underlineStyle": 1
+            "_underlineStyle": 1
         },
-
         "bold": {
-            "font": ".AppleSystemUIFontDemi"
+            "font": "EBGaramondRoman-Bold",
+            "_font": ".AppleSystemUIFontDemi"
         },
-        
         "bold-left-mark": {
             "color": "#452C2416"
         },
-        
         "bold-right-mark": {
             "color": "#452C2416"
         },
-        
         "italic": {
-            "font": ".AppleSystemUIFontItalic"
+            "font": "EBGaramond-Italic",
+            "_font": ".AppleSystemUIFontItalic"
         },
-        
         "italic-left-mark": {
             "color": "#452C2416"
         },
-        
         "italic-right-mark": {
             "color": "#452C2416"
         },
-        
         "boldItalic": {
-            "font": ".AppleSystemUIFontDemiItalic"
+            "font": "EBGaramondItalic-SemiBold",
+            "_font": ".AppleSystemUIFontDemiItalic"
         },
-        
         "boldItalic-left-mark": {
             "color": "#452C2416"
         },
-        
         "boldItalic-right-mark": {
             "color": "#452C2416"
         },
-        
         "code": {
             "font": "Menlo-Regular",
             "color": "#897348",
             "size": 15
         },
-    
         "code-left-backtick": {
             "color": "#A0897348"
         },
-        
         "code-right-backtick": {
             "color": "#A0897348"
         },
-        
         "working-on": {
-            "backgroundColor": "#dae7bc",
+            "backgroundColor": "#35C5DA29",
             "lineSpacing": 0.9,
             "paragraphSpacingBefore": 0,
             "paragraphSpacing": 4
@@ -170,7 +155,6 @@
             "paragraphSpacingBefore": 0,
             "paragraphSpacing": 4
         },
-        
         "todo": {
             "color": "#CC6D3D",
             "headIndent": 36,
@@ -178,21 +162,18 @@
             "paragraphSpacing": 4,
             "size": 16
         },
-        
         "checked-todo-characters": {
             "font": "noteplanstate",
             "headIndent": 36,
             "lineSpacing": 0.90,
             "paragraphSpacing": 4
         },
-
         "checked": {
             "headIndent": 36,
             "color": "#662C2416",
             "lineSpacing": 0.90,
             "paragraphSpacing": 4
         },
-
         "checked-canceled": {
             "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
             "matchPosition": 0,
@@ -201,7 +182,6 @@
             "paragraphSpacing": 4,
             "strikethroughStyle": 1
         },
-
         "checked-scheduled": {
             "regex": "(^\\h*[\\*\\-\\+]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
             "matchPosition": 0,
@@ -209,32 +189,27 @@
             "lineSpacing": 0.90,
             "paragraphSpacing": 4
         },
-        
         "quote-mark": {
             "color": "#80E88B5C",
             "headIndent": 33,
             "size": 16
         },
-        
         "quote-content": {
             "color": "#2C2416",
             "type": "italic",
             "headIndent": 33
         },
-        
         "markdown-link": {
             "color": "#C89240"
         },
         "markdown-link-url": {
             "color": "#465E68"
         },
-
         "done-date": {
             "color": "#AAA",
             "backgroundColor": "#faf9f5",
             "size": 14
         },
-
         "note-title-link": {
             "color": "#662C2416"
         },
@@ -259,49 +234,44 @@
             "isHiddenWithoutCursor": true,
             "isRevealOnCursorRange": true
         },
-        
-		"hashtag": {
-		   "backgroundColor": "#f0ede6",
-           "type": "" 
-		},
-		
-		"attag": {
-			"backgroundColor": "#f0ede6",
+        "hashtag": {
+            "backgroundColor": "#f0ede6",
             "type": ""
-		},
-		
-		"phonenumber": {	   
+        },
+        "attag": {
+            "backgroundColor": "#f0ede6",
+            "type": ""
+        },
+        "phonenumber": {
             "color": "#897348"
-		},
-		
+        },
         "field-key": {
             "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
             "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
             "matchPosition": 1,
             "color": "#897348"
         },
-        
         "highlighted": {
-			"backgroundColor": "#F8F3B0"
-		},
-		"highlighted-left-marker": {
-			"color": "#40000000",
-            "isMarkdownCharacter": true,
-            "isHiddenWithoutCursor": true,
-            "isRevealOnCursorRange": true
-		},
-		"highlighted-right-marker": {
+            "backgroundColor": "#F8F3B0"
+        },
+        "highlighted-left-marker": {
             "color": "#40000000",
             "isMarkdownCharacter": true,
             "isHiddenWithoutCursor": true,
             "isRevealOnCursorRange": true
-		},
+        },
+        "highlighted-right-marker": {
+            "color": "#40000000",
+            "isMarkdownCharacter": true,
+            "isHiddenWithoutCursor": true,
+            "isRevealOnCursorRange": true
+        },
         "callback-button": {
             "comment": "Just for pseudo-buttons. FIXME: Ideal version not working, despite lots of attemps. So requires =b= markers around text.",
             "__regex": "\\[[^]]*?\\]\\(noteplan://.*\\)",
             "regex": "(=b=)(.*?)(=b=)",
             "matchPosition": 2,
-            "backgroundColor": "#50E88B5C",
+            "backgroundColor": "#50E87B5C",
             "borderRadius": 6,
             "inlineBorder": true,
             "leftBorderPadding": 3,
@@ -371,26 +341,21 @@
             "isHiddenWithoutCursor": true,
             "isRevealOnCursorRange": true
         },
-
-		"underline": {
-			"underlineStyle": 1,
-			"underlineColor": "#E88B5C"
-		},
-
-		"underline-left-tilde": {
-			"color": "#448B7355"
-		},
-
-		"underline-right-tilde": {
-			"color": "#448B7355"
-		},
-
+        "underline": {
+            "underlineStyle": 1,
+            "underlineColor": "#E88B5C"
+        },
+        "underline-left-tilde": {
+            "color": "#448B7355"
+        },
+        "underline-right-tilde": {
+            "color": "#448B7355"
+        },
         "#waiting": {
             "regex": "^* (.*#waiting.*)$",
             "matchPosition": 1,
-            "font": ".AppleSystemUIFontItalic"
+            "font": "EBGaramond-Italic"
         },
-
         "Templates_tags-opener": {
             "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
             "matchPosition": 1,
@@ -420,13 +385,11 @@
             "strikethroughStyle": 1,
             "size": 15
         },
-
         "unfinished": {
             "regex": "\\?\\?\\?",
             "color": "#FFFFFF",
             "backgroundColor": "#FF2020"
         },
-
         "end-of-line-comment-hide": {
             "regex": "(.*)( // )(.*)",
             "matchPosition": 3,
@@ -463,7 +426,6 @@
             "isMarkdownCharacter": true,
             "color": "#99818475"
         },
-
         "verse-indicator": {
             "regex": "(§)(.*)",
             "matchPosition": 1,

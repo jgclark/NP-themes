@@ -1,7 +1,10 @@
 {
   "name": "Claude.ai Dark JGC",
   "style": "Dark",
-  "COMMENT": "This is based loosely on Eduard's Claude.ai theme, but with lots of additions and improvements.",
+  "COMMENT": "This is an extended and improved version of the built-in Claude.ai theme.",
+  "author": {
+    "name": "Jonathan Clark"
+  },
   "editor": {
     "backgroundColor": "#1A1512",
     "altBackgroundColor": "#252018",
@@ -16,10 +19,10 @@
   },
   "styles": {
     "body": {
-      "font": ".AppleSystemUIFont",
-      "size": 16,
-      "_font": "EBGaramondRoman-Regular",
-      "_size": 18,
+      "_font": ".AppleSystemUIFont",
+      "_size": 16,
+      "font": "EBGaramond-Regular",
+      "size": 18,
       "lineSpacing": 0.9,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4,
@@ -76,10 +79,11 @@
       "color": "#E8DFD6",
       "size": 19,
       "comment": "This is optically closer to 17pt body text.",
-      "underlineStyle": 1
+      "_underlineStyle": 1
     },
     "bold": {
-      "font": ".AppleSystemUIFontDemi"
+      "font": "EBGaramondRoman-Bold",
+      "_font": ".AppleSystemUIFontDemi"
     },
     "bold-left-mark": {
       "color": "#45E8DFD6"
@@ -88,7 +92,8 @@
       "color": "#45E8DFD6"
     },
     "italic": {
-      "font": ".AppleSystemUIFontItalic"
+      "font": "EBGaramond-Italic",
+      "_font": ".AppleSystemUIFontItalic"
     },
     "italic-left-mark": {
       "color": "#45E8DFD6"
@@ -97,7 +102,8 @@
       "color": "#45E8DFD6"
     },
     "boldItalic": {
-      "font": ".AppleSystemUIFontDemiItalic"
+      "font": "EBGaramondItalic-SemiBold",
+      "_font": ".AppleSystemUIFontDemiItalic"
     },
     "boldItalic-left-mark": {
       "color": "#45E8DFD6"
@@ -116,9 +122,8 @@
     "code-right-backtick": {
       "color": "#66E88B5C"
     },
-
     "working-on": {
-      "backgroundColor": "#408654",
+      "backgroundColor": "#70408654",
       "lineSpacing": 0.9,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
@@ -141,7 +146,6 @@
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
     },
-
     "todo": {
       "color": "#E88B5C",
       "headIndent": 36,
@@ -183,8 +187,8 @@
     },
     "quote-content": {
       "color": "#C8BFB6",
-      "type": "italic",
-      "headIndent": 33
+      "headIndent": 33,
+      "type": "italic"
     },
     "done-date": {
       "color": "#66E8DFD6",
@@ -194,7 +198,6 @@
     "note-title-link": {
       "color": "#66E8DFD6"
     },
-
     "hashtag": {
       "backgroundColor": "#20E88B5C",
       "type": ""
@@ -206,14 +209,12 @@
     "phonenumber": {
       "color": "#897348"
     },
-
     "field-key": {
       "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
       "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
       "matchPosition": 1,
       "color": "#B9A378"
     },
-    
     "highlighted": {
       "backgroundColor": "#A7A115"
     },
@@ -223,7 +224,6 @@
     "highlighted-right-marker": {
       "color": "#40000000"
     },
-
     "callback-button": {
       "comment": "Just for pseudo-buttons. FIXME: Ideal version not working, despite lots of attemps. So requires =b= markers around text.",
       "__regex": "\\[[^]]*?\\]\\(noteplan://.*\\)",
@@ -253,7 +253,6 @@
       "color": "#CBCCC6",
       "backgroundColor": "#44CBCCC6"
     },
-
     "URL-link": {
       "regex": "\\[[^]]*?\\]\\(.*?\\)",
       "isRevealOnCursorRange": true,
@@ -284,7 +283,6 @@
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true
     },
-
     "strikethrough": {
       "color": "#99A89784",
       "strikethroughStyle": 2,
@@ -296,7 +294,6 @@
     "strikethrough-right-tilde": {
       "color": "#44A89784"
     },
-
     "underline": {
       "underlineStyle": 1,
       "underlineColor": "#E88B5C"
@@ -307,13 +304,11 @@
     "underline-right-tilde": {
       "color": "#44A89784"
     },
-
     "#waiting": {
       "regex": "^* (.*#waiting.*)$",
       "matchPosition": 1,
-      "font": ".AppleSystemUIFontItalic"
+      "font": "EBGaramond-Italic"
     },
-
     "Templates_tags-opener": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 1,
@@ -343,13 +338,11 @@
       "strikethroughStyle": 1,
       "size": 15
     },
-
     "unfinished": {
       "regex": "\\?\\?\\?",
       "color": "#FFFFFF",
       "backgroundColor": "#FF2020"
     },
-
     "end-of-line-comment-hide": {
       "regex": "(.*)( // )(.*)",
       "matchPosition": 3,
@@ -367,7 +360,6 @@
       "isMarkdownCharacter": true,
       "color": "#99818475"
     },
-
     "inline-comment": {
       "regex": "(%)(%([^%]+%?)+%)(%)",
       "matchPosition": 2,
@@ -387,7 +379,6 @@
       "isMarkdownCharacter": true,
       "color": "#99818475"
     },
-
     "verse-indicator": {
       "regex": "(§)(.*)",
       "matchPosition": 1,
@@ -403,8 +394,5 @@
       "backgroundColor": "#f0f0f0",
       "borderRadius": 4
     }
-  },
-  "author": {
-    "name": "Jonathan Clark"
   }
 }
