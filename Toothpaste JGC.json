@@ -68,7 +68,6 @@
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
     },
-
     "title-mark1": {
       "color": "#66DAE3E8",
       "font": "AvenirNext-DemiBold",
@@ -124,7 +123,6 @@
       "font": "AvenirNext-DemiBold",
       "size": 18
     },
-
     "bold": {
       "color": "#B74746",
       "font": "AvenirNext-Bold"
@@ -136,7 +134,7 @@
       "color": "#99C75756"
     },
     "italic": {
-      "color": "#9B4241",
+      "color": "#B74746",
       "font": "AvenirNext-Italic"
     },
     "italic-left-mark": {
@@ -218,7 +216,6 @@
       "__font": "Menlo-Regular",
       "font": "AvenirNext-Regular"
     },
-
     "quote-mark": {
       "color": "#354432",
       "font": "noteplanstate",
@@ -232,14 +229,12 @@
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 8
     },
-
     "link": {
       "color": "#C88E6B"
     },
     "schedule-to-date-link": {
       "color": "#E8AE9B"
     },
-
     "done-date": {
       "color": "#656560"
     },
@@ -365,14 +360,12 @@
       "isHiddenWithoutCursor": true,
       "isMarkdownCharacter": true
     },
-
     "field-key": {
       "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
       "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
       "matchPosition": 1,
       "color": "#96CBFE"
     },
-
     "highlighted": {
       "backgroundColor": "#66D2D21B",
       "order": 35,
@@ -390,7 +383,6 @@
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
-
     "strikethrough": {
       "strikethroughStyle": 2,
       "isRevealOnCursorRange": true
