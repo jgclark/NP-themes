@@ -57,13 +57,13 @@
       "color": "#222E33",
       "font": "IBMPlexSansCond-Regular",
       "size": 16,
-      "lineSpacing": 0.8,
+      "lineSpacing": 1.0,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
     },
     "tabbed": {
       "headIndent": 43,
-      "lineSpacing": 0.8,
+      "lineSpacing": 1.0,
       "paragraphSpacing": 8,
       "paragraphSpacingBefore": 0
     },
@@ -78,21 +78,21 @@
       "color": "#66E9C062",
       "font": "IBMPlexSansCond-SemiBold",
       "size": 18,
-      "paragraphSpacingBefore": 0,
+      "paragraphSpacingBefore": 12,
       "paragraphSpacing": 4
     },
     "title-mark3": {
       "color": "#66E9C062",
       "font": "IBMPlexSansCond-SemiBold",
       "size": 17,
-      "paragraphSpacingBefore": 0,
+      "paragraphSpacingBefore": 10,
       "paragraphSpacing": 4
     },
     "title-mark4": {
       "color": "#66E9C062",
       "font": "IBMPlexSansCond-SemiBold",
       "size": 15,
-      "paragraphSpacingBefore": 0,
+      "paragraphSpacingBefore": 8,
       "paragraphSpacing": 4
     },
     "title1": {
@@ -164,20 +164,20 @@
     },
     "checked-todo-characters": {
       "headIndent": 36,
-      "lineSpacing": 0.9,
+      "lineSpacing": 1.0,
       "paragraphSpacing": 4
     },
     "todo": {
       "font": "noteplanstate",
       "color": "#CC6666",
       "headIndent": 36,
-      "lineSpacing": 0.9,
+      "lineSpacing": 1.0,
       "paragraphSpacing": 4
     },
     "checked": {
       "color": "#A0098308",
       "headIndent": 36,
-      "lineSpacing": 0.9,
+      "lineSpacing": 1.0,
       "paragraphSpacing": 4
     },
     "checked-canceled": {
@@ -218,7 +218,7 @@
       "color": "#434343",
       "type": "italic",
       "headIndent": 36,
-      "lineSpacing": 0.9,
+      "lineSpacing": 1.0,
       "paragraphSpacing": 4,
       "paragraphSpacingBefore": 0
     },
