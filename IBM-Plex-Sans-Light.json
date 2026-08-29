@@ -14,7 +14,7 @@
     "toolbarIconColor": "#222E33",
     "menuItemColor": "#222E33",
     "timeBlockColor": "#E9C062",
-    "shouldOverwriteFont": true
+    "shouldOverwriteFont": false
   },
   "__orderedStyles": [
     "title-mark1",
@@ -69,35 +69,35 @@
     },
     "title-mark1": {
       "color": "#66DAE3E8",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 22,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 6
     },
     "title-mark2": {
       "color": "#66E9C062",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 18,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
     },
     "title-mark3": {
       "color": "#66E9C062",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 17,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
     },
     "title-mark4": {
       "color": "#66E9C062",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 15,
       "paragraphSpacingBefore": 0,
       "paragraphSpacing": 4
     },
     "title1": {
       "color": "#C5487A",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 24
     },
     "title-in-frontmatter": {
@@ -105,26 +105,26 @@
       "matchPosition": 1,
       "color": "#C5487A",
       "size": 22,
-      "font": "IBMPlexSans-SemiBold"
+      "font": "IBMPlexSans-SmBld"
     },
     "title2": {
       "color": "#AB5699",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 22
     },
     "title3": {
       "color": "#7B72B9",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 20
     },
     "title4": {
       "color": "#8B82C9",
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "size": 18
     },
     "bold": {
       "color": "#885555",
-      "font": "IBMPlexSans-SemiBold"
+      "font": "IBMPlexSans-SmBld"
     },
     "bold-left-mark": {
       "color": "#88885555"
@@ -144,7 +144,7 @@
     },
     "boldItalic": {
       "color": "#885555",
-      "font": "IBMPlexSans-SemiBoldItalic"
+      "font": "IBMPlexSans-SmBldItalic"
     },
     "boldItalic-left-mark": {
       "color": "#88885555"
@@ -415,7 +415,7 @@
     "deadline": {
       "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
-      "font": "IBMPlexSans-SemiBold",
+      "font": "IBMPlexSans-SmBld",
       "color": "#C53119"
     },
     "working-on": {
@@ -520,7 +520,7 @@
       "isRevealOnCursorRange": false
     },
     "Timeblock-Hide-Tag": {
-      "regex": "\\s#🕑",
+      "regex": "\\s#\ud83d\udd51",
       "matchPosition": 0,
       "backgroundColor": "#FAFAFA",
       "isRevealOnCursorRange": true,
@@ -587,7 +587,7 @@
       "isRevealOnCursorRange": true
     },
     "verse-indicator": {
-      "regex": "(§)(.*)",
+      "regex": "(\u00a7)(.*)",
       "matchPosition": 1,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true,
@@ -595,7 +595,7 @@
       "color": "#99818475"
     },
     "verse-text": {
-      "regex": "(¶)(.*)",
+      "regex": "(\u00b6)(.*)",
       "matchPosition": 2,
       "color": "#F04060",
       "backgroundColor": "#f0f0f0",

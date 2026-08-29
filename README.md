@@ -46,6 +46,9 @@ to
     "size": 16,
 ```
 
+## IBM-Plex-Sans Condensed / IBM-Plex-Sans
+This pair are also designed to be used with **small screens**, using the "IBM Plex" font which is fairly compact, and has a very compact 'Condensed' version. It will need to be installed on your system from somewhere like [https://fonts.google.com/specimen/IBM+Plex+Sans](Google fonts for Sans) and [https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed](Condensed). It is a large font family, and also has Serif, Mono and Arabic faces, amongst others.
+
 ## Toothbleach Condensed JGC / Toothpaste Condensed JGC
 *They had been called 'Tooth... Condensed', but then versions of this were incorporated into the main app, and so I've had to change the name to stop ambiguity for further development of these custom themes.*
 

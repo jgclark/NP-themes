@@ -14,7 +14,7 @@
     "toolbarIconColor": "#c5c5c0",
     "menuItemColor": "#c5c5c0",
     "timeBlockColor": "#E9C062",
-    "shouldOverwriteFont": true
+    "shouldOverwriteFont": false
   },
   "__orderedStyles": [
     "title-mark1",
@@ -491,7 +491,7 @@
       "isRevealOnCursorRange": true
     },
     "Timeblock-Hide-Tag": {
-      "regex": "\\s#🕑",
+      "regex": "\\s#\ud83d\udd51",
       "matchPosition": 0,
       "backgroundColor": "#1D1E1F",
       "isRevealOnCursorRange": true,
@@ -563,7 +563,7 @@
       "isRevealOnCursorRange": true
     },
     "verse-indicator": {
-      "regex": "(§)(.*)",
+      "regex": "(\u00a7)(.*)",
       "matchPosition": 1,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true,
@@ -571,7 +571,7 @@
       "color": "#99818475"
     },
     "verse-text": {
-      "regex": "(¶)(.*)",
+      "regex": "(\u00b6)(.*)",
       "matchPosition": 2,
       "color": "#F04060",
       "backgroundColor": "#2E2F30",
